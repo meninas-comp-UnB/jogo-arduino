@@ -1,3 +1,2 @@
 # Code.ino
-Trabalho de pesquisa para o desenvolvimento de um jogo educacional com foco nas integrantes do projeto Meninas.comp. 
-
+A proposta é ser um jogo digital que auxilie no aprendizado de Arduino, com foco no desenvolvimento de código para a programação dos seus componentes. Assim, por meio das diferentes fase do jogo, o jogador aprenderá a definição de Arduino, seus componentes, e a estrutura de programação. Na sequência, o jogador deve desenvolver um mini projeto com o conhecimento adquirido nas fases anteriores.
