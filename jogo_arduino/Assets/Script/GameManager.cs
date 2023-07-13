@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public KeyCode up = KeyCode.W;
     public KeyCode down = KeyCode.S;
     
+    
 
     // Start is called before the first frame update
     void Start()
