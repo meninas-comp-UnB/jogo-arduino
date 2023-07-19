@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
     public float moveSpeed = 1f;
     public GameManager gameManager = null;
     public bool canMove = true;
+    public bool moveRight, moveLeft, moveUp, moveDown;
 
 
     public AudioSource hitAudio;
@@ -32,12 +33,22 @@ public class PlayerManager : MonoBehaviour
 
         Vector3 mousePos = Input.mousePosition;
     }
+    public void moveLeftTrue(){
+        moveLeft = true;
+    }
+
+    void FixedUpdate(){
+        if(moveRight == true){
+            
+        }
+    }
+
 
     void Movement()
     {
 
         Vector3 moveInput = Vector3.zero;
-        if (Input.GetKey(gameManager.left) || Input.GetKey(gameManager.right))
+        if (Input.GetKey(gameManager.left) ||  Input.GetKey(gameManager.right))
         {
             moveInput.x = Input.GetAxis("Horizontal");
 
@@ -83,4 +94,6 @@ public class PlayerManager : MonoBehaviour
         animator.SetFloat("Speed", moveInput.magnitude);
         transform.position += moveInput * moveSpeed * Time.deltaTime;
     }
+
+
 }
