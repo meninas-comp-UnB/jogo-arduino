@@ -895,6 +895,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316335444}
   m_CullTransparentMesh: 1
+--- !u!1 &317275667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317275668}
+  - component: {fileID: 317275669}
+  m_Layer: 0
+  m_Name: VisualCue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &317275668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317275667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.012, y: 0.4348, z: 0}
+  m_LocalScale: {x: 0.44681528, y: 0.4295437, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2068202211}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &317275669
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317275667}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 33771ddf0ee8b4ddbb6e1a8effc50746, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &426992288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,7 +1381,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 52eeafc0f755b4305ba2cf15f26e2805, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2153,7 +2237,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 436f811494dbd4849916ca7aa8651733, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2198,7 +2282,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -9.021754, y: 5.4920907}
+  - {x: -8.878085, y: 2.245162}
   - {x: -8.984994, y: 1.1640941}
   - {x: -6.0503664, y: 1.1442682}
   - {x: -6.0678625, y: 0.9671296}
@@ -2214,13 +2298,13 @@ EdgeCollider2D:
   - {x: -8.99011, y: -2.532783}
   - {x: 9.0223055, y: -2.5406015}
   - {x: 9.042525, y: 2.2782803}
-  - {x: 5.881655, y: 2.3063793}
-  - {x: 2.2372108, y: 1.8077428}
+  - {x: 5.881655, y: 2.372552}
+  - {x: 2.2372108, y: 1.9621457}
   - {x: 0.4204355, y: 2.0283213}
   - {x: 0.51685214, y: 1.6945484}
   - {x: -0.5001304, y: 1.6961436}
   - {x: -0.78651905, y: 2.151282}
-  - {x: -8.983817, y: 2.2021608}
+  - {x: -9.066086, y: 2.3872647}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2460,25 +2544,184 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 286473828}
   profile:
-  - {fileID: 21300000, guid: 2bf6e346456f592418637452a3a71a96, type: 3}
-  - {fileID: 21300000, guid: 8bac73071c561c848968e20433043365, type: 3}
-  - {fileID: 21300000, guid: 71199490d05a68a41b2fa4d058cbcd9f, type: 3}
-  - {fileID: 21300000, guid: 085982fc84b1e574eb64f09ce03e38c5, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: 594a1a7cba77a456d8d439291a6b3aea, type: 3}
+  - {fileID: 21300000, guid: 594a1a7cba77a456d8d439291a6b3aea, type: 3}
+  - {fileID: 21300000, guid: 594a1a7cba77a456d8d439291a6b3aea, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: 594a1a7cba77a456d8d439291a6b3aea, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: d7ed99c80433243078f727efb3c09b70, type: 3}
+  - {fileID: 21300000, guid: d7ed99c80433243078f727efb3c09b70, type: 3}
+  - {fileID: 21300000, guid: d7ed99c80433243078f727efb3c09b70, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: 9ed501dc36ae44546864d7b60dc01eee, type: 3}
+  - {fileID: 21300000, guid: 9ed501dc36ae44546864d7b60dc01eee, type: 3}
+  - {fileID: 21300000, guid: 9ed501dc36ae44546864d7b60dc01eee, type: 3}
+  - {fileID: 21300000, guid: 9ed501dc36ae44546864d7b60dc01eee, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   slide:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
   speechText:
-  - "Ol\xE1 meu nome \xE9 Carlona"
-  - "Serei sua professora de rob\xF3tica"
-  - Amo comer sorvete e baixar filmes
-  - Prazer em te conhecer prof
+  - "Ol\xE1 meninas, gostaria de dizer que  voc\xEAs s\xE3o muito bem-vindas ao meninas.comp!"
+  - " Aqui voc\xEAs v\xE3o ver que computa\xE7\xE3o tamb\xE9m \xE9 coisa de menina!
+    Nossas aulas ser\xE3o nessa sala, "
+  - 'aqui  na UnB. Nesse lado veremos a teoria e a esquerda temos os computadores
+    para que possam treinar e montar '
+  - "seus projetos. Antes de come\xE7armos nossa, vou pedir para que voc\xEAs se
+    apresentem tamb\xE9m! "
+  - "Ol\xE1, meu nome \xE9 Ame, meu nome foi em homenagem a tr\xEAs professoras da
+    ci\xEAncia da computa\xE7\xE3o "
+  - "Alet\xE9ia, Maristela e Em\xEDlia. Sou da escola \u201CCED 3 do Parano\xE1\u201D,
+    conheci o projeto atrav\xE9s de uma palestra. "
+  - "Que legal !! Eu conhe\xE7o elas. Sabia que elas fundaram o projeto Meninas.comp?"
+  - "Que incr\xEDvel! eu n\xE3o tinha ideia. "
+  - "Quem vai ser a pr\xF3xima?"
+  - 'E ai meninas, tudo joia? Eu sou a Ana! Estudo no CEDLAN, meu nome foi em homenagem
+    a Annie Easley! '
+  - "Amo foguetes e um dia eu quero ir \xE0 lua em um foguete que ainda vou ajudar
+    a construir."
+  - Que legal! Sabia que ela trabalhou na Nasa!?
+  - Siim, quero ser grandiosa assim como ela foi.
+  - "Pr\xF3xima?"
+  - "Ooi pessoal, meu nome \xE9 Rafaela, estudo no CE Pedro Mour\xE3o! Sou um pouco
+    t\xEDmida inicialmente, "
+  - "mas jaja eu me solto com voc\xEAs. A m\xFAsica \xE9 uma das minhas paix\xF5es,
+    quero aprender a programar e"
+  - "projetar uma bateria eletr\xF4nica. Meus pais s\xE3o programadores e me apoiaram
+    na decis\xE3o."
+  - Que legal Rafa, se precisar de ajuda, vou querer participar!!
+  - "Opa,s\xF3 bora! A gente pode ir se ajudando. Tenho certeza que o projeto vai
+    me ajudar muito com aprendizado."
+  - "Concordo com voc\xEA, Rafa. Quem vai ser a pr\xF3xima?"
+  - "Oiii, meu nome Grace, meu nome \xE9 em homenagem a Grace Hopper, estudo no CED
+    310"
+  - "de Santa Maria, tenho paix\xE3o por criar contos."
+  - "Ela era da marinha n\xE9!?"
+  - "Siim, mas eu me interesso mesmo pela parte de sistemas e quero ter muitos diplomas
+    tamb\xE9m! rsrs"
+  - "Maravilha rsrs. Quem vai ser a pr\xF3xima?"
+  - "Oi meninas, meu nome \xE9 Alice, estudo no CEM Paulo Freire, sou bem tranquila,
+    gosto muito de aprender e"
+  - "me dedico muito em tudo que fa\xE7o, acredito que a programa\xE7\xE3o e a rob\xF3tica
+    andam  lado a lado,"
+  - e com ela podemos fazer coisas grandiosas. Quero construir coisas que possam
+    facilitar a vida das pessoas.
+  - "Realmente Alice, atrav\xE9s deles, podemos construir coisas maravilhosas e transformar
+    o mundo."
+  - "Pr\xF3xima?"
+  - "Ol\xE1, meu nome \xE9 Laura, estudo na escola Francisco Alan! A programa\xE7\xE3o
+    \xE9 minha paix\xE3o e os circuitos"
+  - "me fascinam desde pequena, aprendi muito vendo minha m\xE3e consertando computadores,
+    quero"
+  - "construir um rob\xF4 que ajuda nas limpezas de casa. Meu nome"
+  - "foi dado em homenagem \xE0 Maria Laura Mouzinho, uma grande educadora. "
+  - "Que legal, ouvi dizer que ela ajudou na forma\xE7\xE3o de muitos professores
+    de matem\xE1tica."
+  - "Bom meninas, agora que voc\xEAs j\xE1 se conhecem, puderam perceber que nossa
+    turma tem idades variadas"
+  - "e com isso queremos que voc\xEAs lembrem que n\xE3o h\xE1 idade para estudar,
+    basta"
+  - "ter disposi\xE7\xE3o e vontade de aprender. Agora vamos dar in\xEDcio a nossa
+    aula."
   actorNameText:
-  - Carlona
-  - Carlona
-  - Carlona
+  - Carla
+  - Carla
+  - Carla
+  - Carla
   - Ame
+  - Ame
+  - Carla
+  - Ame
+  - Carlona
+  - Ana
+  - Ana
+  - Ame
+  - Ana
+  - Carla
+  - Rafaela
+  - Rafaela
+  - Rafaela
+  - Ame
+  - Rafaela
+  - Carla
+  - Grace
+  - Grace
+  - Ame
+  - Grace
+  - Carla
+  - Alice
+  - Alice
+  - Alice
+  - Carla
+  - Carla
+  - Laura
+  - Laura
+  - Laura
+  - Laura
+  - Ame
+  - Carla
+  - Carla
+  - Carla
 --- !u!61 &938680144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2621,7 +2864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056939361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.531, y: 0.423, z: 0}
+  m_LocalPosition: {x: 1.531, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3127,6 +3370,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456675361}
   m_CullTransparentMesh: 1
+--- !u!1 &1459094482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1459094483}
+  - component: {fileID: 1459094485}
+  - component: {fileID: 1459094484}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1459094483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459094482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2068202211}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1459094484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459094482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a508383e39e45de8dc69d7ca0a273a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualCue: {fileID: 317275667}
+  profile:
+  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: d7ed99c80433243078f727efb3c09b70, type: 3}
+  slide:
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  speechText:
+  - falar sobre alguma placas
+  - "Amo foguetes e um dia eu quero ir \xE0 lua em um foguete que ainda vou ajudar
+    a construir. "
+  - Que legal! Sabia que ela trabalhou na Nasa!?
+  - "Seria um componente eletr\xF4nico?"
+  - "Est\xE1 no caminho, Ardu\xEDno \xE9 uma plataforma de hardware e software livre, "
+  - "projetada com um microcontrolador de placa \xFAnica,"
+  - "com suporte de entrada/sa\xEDda embutido e uma linguagem de programa\xE7\xE3o
+    padr\xE3o. "
+  actorNameText:
+  - Ana
+  - Ana
+  - Ane
+  - Ame
+  - Ame
+  - Carlona
+  - Alice
+--- !u!61 &1459094485
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459094482}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.75}
+  m_EdgeRadius: 0
 --- !u!1 &1472062556
 GameObject:
   m_ObjectHideFlags: 0
@@ -3520,7 +3869,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1808572880}
   - component: {fileID: 1808572879}
-  - component: {fileID: 1808572881}
   m_Layer: 0
   m_Name: sala
   m_TagString: Untagged
@@ -3568,7 +3916,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 42770e941f9c2fe4693d8802f595220f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3595,32 +3943,6 @@ Transform:
   m_Father: {fileID: 752364212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1808572881
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808572878}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18, y: 8}
-    newSize: {x: 18, y: 8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!1 &1813791834
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,6 +4465,131 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &2068202207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068202211}
+  - component: {fileID: 2068202210}
+  - component: {fileID: 2068202209}
+  - component: {fileID: 2068202208}
+  m_Layer: 0
+  m_Name: Ana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!70 &2068202208
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068202207}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.4, y: 0.5}
+  m_Direction: 0
+--- !u!50 &2068202209
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068202207}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &2068202210
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068202207}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.4, y: 0.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2068202211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068202207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.49, y: 0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1459094483}
+  - {fileID: 317275668}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2102332892
 GameObject:
   m_ObjectHideFlags: 0
