@@ -37,7 +37,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Found more than one Dialogue Manager in the scene");
+            Debug.LogWarning("it is not working");
         }
         instance = this;
 
@@ -65,11 +65,8 @@ public class TutorialManager : MonoBehaviour
 
 
     public void NextSentence(){
-       // examples.GetComponent<Image>().sprite = telas[1];
         if(index < 2){
             examples.GetComponent<Image>().sprite = telas[index];
-           // examples.sprite = telas[1];
-
             index++;
         }else{// quando acabar
 

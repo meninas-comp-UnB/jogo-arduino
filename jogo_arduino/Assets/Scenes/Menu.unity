@@ -473,6 +473,7 @@ MonoBehaviour:
   ex:
   - {fileID: 21300000, guid: d9229e95e258cd946be9ae440435ccfe, type: 3}
   - {fileID: 21300000, guid: 14511a81a10904c4d89f331e1af8683a, type: 3}
+  index: 1
 --- !u!1 &470313324
 GameObject:
   m_ObjectHideFlags: 0
