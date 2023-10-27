@@ -26,8 +26,8 @@ public class Menu : MonoBehaviour
     public void QuitGame()
     {
         //Unity
-        UnityEditor.EditorApplication.isPlaying = false;
-        //Jogo compilado
-        //Appplication.Quit();
+       // UnityEditor.EditorApplication.isPlaying = false;
+       Application.Quit();
+
     }
 }
