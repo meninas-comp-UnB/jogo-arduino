@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -28,7 +27,7 @@ public class DialogueManager : MonoBehaviour
 
    // [SerializeField] private TextMeshProUGUI dialogueText;
 
-    private Story currentStory;
+   // private Story currentStory;
 
     private bool dialogueIsPlaying;
 
@@ -107,6 +106,11 @@ public class DialogueManager : MonoBehaviour
         }
 
     }
+    public void StopDialogue(){
+        speechText.text = "";
+        index = 0;
+        dialoguePanel.SetActive(false);
+   }
 
     public void ExitDialogueMode(){
         dialogueIsPlaying = false;
@@ -114,9 +118,4 @@ public class DialogueManager : MonoBehaviour
        // dialogueText.text = "";
     }
 
-    public void ContinueStory(){
-
-
-
-
-}}
+}

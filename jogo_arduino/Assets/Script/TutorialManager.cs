@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -24,7 +23,7 @@ public class TutorialManager : MonoBehaviour
 
    // [SerializeField] private TextMeshProUGUI dialogueText;
 
-    private Story currentStory;
+    //private Story currentStory;
     private Sprite[] telas;
 
     private bool dialogueIsPlaying;
