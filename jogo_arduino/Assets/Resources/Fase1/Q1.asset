@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Q1
   m_EditorClassIdentifier: 
   question: "O que \xE9 um hardware?"
+  correctAnswer: 0
   answers:
   - Arduino
   - "C\xF3digo"
   - Navegador
   images:
-  - {fileID: 21300000, guid: 6896b257b6a54a942bc7d76ac200d399, type: 3}
-  - {fileID: 21300000, guid: 6ad545289f99dc24da4769ec3ea4d429, type: 3}
-  - {fileID: 21300000, guid: d4c7ec1c1726d244398f17cb8e3342f3, type: 3}
+  - {fileID: 21300000, guid: 8547af2f0b60448458545e320a2cd412, type: 3}
+  - {fileID: 21300000, guid: 7898355e0be5c4d64b404b823def915d, type: 3}
+  - {fileID: 21300000, guid: e278538a5ac060d45992cf5242bad350, type: 3}

@@ -18,7 +18,7 @@ public class QuestionSetup : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI pointsTela;
     
-
+    private int index;
 
     private void Awake()
     {
@@ -29,19 +29,31 @@ public class QuestionSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 3; i++){
-            //Get a new question
-            SelectNewQuestion();
+        index = 1;
+        //Get a new question
+        SelectNewQuestion();
+        // Set all text and values on screen
+        SetQuestionValues();
+        // Set all of the answer buttons text and correct answer values
+        SetAnswerValues();
+        SetPoint(index);
+        index++;
+        
+    }
+
+
+    public void NextSentence(){
+        if(index < 6){
+             SelectNewQuestion();
             // Set all text and values on screen
             SetQuestionValues();
             // Set all of the answer buttons text and correct answer values
             SetAnswerValues();
-            SetPoint(i);
-            
+            SetPoint(index);
+            index++;
         }
         
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -102,7 +114,8 @@ public class QuestionSetup : MonoBehaviour
     
 
     public void SetPoint(int number){
-        string text = pointsTela + "/5";
+        Debug.Log(number);
+        string text = number + "/5";
         pointsTela.text = text;
     }
 }
