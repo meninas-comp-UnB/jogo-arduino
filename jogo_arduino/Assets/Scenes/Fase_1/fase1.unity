@@ -1772,52 +1772,55 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6d1169e3da11a46339c04e1fe4b197be, type: 3}
   - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
   speechText:
-  - "Bom dia alunas, meu nome \xE9 Carla Feiju, mas podem me chamar de Carlona. "
-  - "Eu sou a professora de voc\xEAs e hoje iremos iniciar nossa primeira aula de
-    arduino. "
+  - "Bom dia, queridas alunas! Eu sou Carla Feiju, mas fiquem \xE0 vontade para me
+    chamar carinhosamente de Carlona."
+  - "Sou a professora de voc\xEAs, e hoje vamos come\xE7ar nossa primeira aula de
+    Arduino."
   - Bom dia Carlona !!
-  - "Vamos come\xE7ar, voc\xEAs sabem o que \xE9 um arduino?"
-  - "N\xE3o sei ao certo professora."
-  - "Voc\xEAs tem ideia do que pode ser?"
-  - "Seria um componente eletr\xF4nico?"
-  - "Est\xE1 no caminho, Ardu\xEDno \xE9 uma plataforma de hardware e software livre, "
+  - "Vamos l\xE1, pessoal! Algu\xE9m pode me dizer se voc\xEAs j\xE1 t\xEAm uma ideia
+    do que \xE9 um Arduino?"
+  - "Confesso, professora, que n\xE3o tenho certeza no momento."
+  - "Algu\xE9m pode arriscar uma suposi\xE7\xE3o sobre o que poderia ser?"
+  - "Estava pensando em algo relacionado a componentes eletr\xF4nicos."
+  - "Est\xE1 no rumo certo! Arduino \xE9 uma plataforma de hardware e software de
+    c\xF3digo aberto, incrivelmente fascinante,"
   - "projetada com um microcontrolador de placa \xFAnica,"
   - "com suporte de entrada/sa\xEDda embutido e uma linguagem de programa\xE7\xE3o
     padr\xE3o. "
-  - 'O que seria hardware professora? '
-  - "Hardware \xE9 a parte f\xEDsica do computador ou celular, ou seja, o conjunto
-    de mecanismo eletr\xF4nicos"
-  - "Aqui est\xE3o alguns exemplos de  hardware externo que seriam componentes vis\xEDveis"
-  - " e o hardware interno que seriam os componentes que n\xE3o s\xE3o vis\xEDveis."
-  - "Voc\xEAs sabem o qu\xEA \xE9 um microcontrolador?"
-  - Seria um tipo de controle pequeno?
+  - "Qual seria a defini\xE7\xE3o de hardware, professora?"
+  - "Hardware compreende a parte f\xEDsica do computador ou celular, ou seja, o conjunto
+    de dispositivos eletr\xF4nicos."
+  - "Aqui, apresentam-se alguns exemplos de hardware externo, que s\xE3o componentes
+    vis\xEDveis."
+  - "E o hardware interno, que s\xE3o os componentes que n\xE3o se fazem vis\xEDveis."
+  - "Voc\xEAs est\xE3o familiarizados com o conceito de microcontrolador?"
+  - Isso seria como um tipo de controle em tamanho reduzido?
   - Seria um videogame?
-  - "hahah, quase, n\xE3o seria o videogame todo, mas ele precisa disso para funcionar. "
-  - "\xC9 um computador  em um \xFAnico chip, contendo um processador que possua
-    uma unidade l\xF3gica. "
-  - "Esse processador possui entrada e sa\xEDda de temporizadores e tamb\xE9m possibilitam
-    a comunica\xE7\xE3o serial. "
-  - "Ent\xE3o o arduino seria tipo um c\xE9rebro para o nosso rob\xF4? "
+  - "Hahaha, quase l\xE1! N\xE3o \xE9 exatamente o videogame em si, mas ele depende
+    disso para funcionar."
+  - "\xC9 quase como um computador em um \xFAnico chip, com um processador cuidando
+    da l\xF3gica. Esse processador "
+  - "lida com rel\xF3gios, envia e recebe informa\xE7\xF5es em um ritmo programado
+    e se comunica de modo espec\xEDfico."
+  - "Ent\xE3o, o Arduino seria como o c\xE9rebro do nosso rob\xF4?"
   - 'Falando de maneira informal, nesse caso ele seria. '
-  - "Nossa, que legal!! Como funcionam essas entradas e sa\xEDdas nele? "
-  - "Bora l\xE1, vou mostrar pra voc\xEAs! "
-  - "O arduino uno \xE9 da fam\xEDlia dos arduinos. Ele possui diversas portas para
-    finalidades diferentes, "
-  - "como por exemplo o 5V que \xE9 usado para a alimenta\xE7\xE3o do arduino,"
-  - "o GND que funciona como o \"terra\" de um circuito, portas anal\xF3gicas, digitais
-    e portas pwm. "
+  - "Uau, isso \xE9 incr\xEDvel! Como essas entradas e sa\xEDdas funcionam no Arduino?"
+  - "Vamos nessa, vou apresentar para voc\xEAs!"
+  - "O Arduino Uno, da fam\xEDlia Arduino, tem v\xE1rias portas para diferentes prop\xF3sitos."
+  - como por exemplo 5V, que serve para dar energia ao Arduino,
+  - "o GND seria como a \"terra\" de um circuito, e temos portas anal\xF3gicas, digitais
+    e portas PWM."
   - "As portas anal\xF3gicas s\xE3o portas que fornecem o valor  "
-  - "de tens\xE3o onde seu limite de tens\xE3o varia entre o m\xE1ximo e o m\xEDnimo
-    suportado."
-  - "As portas digitais s\xE3o usadas como portas de comunica\xE7\xE3o do arduino
-    com outros componentes, "
-  - "onde a porta tx \xE9 dada para transmiss\xE3o e a rx \xE9 dada para recep\xE7\xE3o "
-  - "As portas pwm, s\xE3o portas digitais que possuem a fun\xE7\xE3o de obter resultados
-    anal\xF3gicos de maneira digital, "
-  - " geralmente se tem um \u201C~\u201D ao lado do n\xFAmero."
+  - "s\xE3o como portas que medem a voltagem, e essa voltagem fica entre um valor
+    m\xEDnimo e um valor m\xE1ximo."
+  - "As portas digitais s\xE3o como canais de conversa do Arduino com outros componentes."
+  - "Nessas portas, a TX \xE9 para enviar (transmitir) e a RX \xE9 para receber (recepcionar)."
+  - "As portas PWM s\xE3o como portas m\xE1gicas que conseguem criar efeitos anal\xF3gicos
+    usando truques digitais,"
+  - "normalmente, voc\xEA vai ver um \" ~ \" pertinho do n\xFAmero nessas portas."
   - "Uau, que incr\xEDvel professora! "
-  - "Agora que voc\xEAs j\xE1 sabem o que \xE9 um arduino, vou liber\xE1-las para
-    fazer o nosso teste."
+  - "Agora que j\xE1 t\xEAm uma ideia do que \xE9 o Arduino, fiquem \xE0 vontade
+    para iniciar o teste."
   actorNameText:
   - Carlona
   - Carlona
