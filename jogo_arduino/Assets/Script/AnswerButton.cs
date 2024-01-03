@@ -33,11 +33,13 @@ public class AnswerButton : MonoBehaviour
         if (isCorrect)
         {
             Debug.Log("CORRECT ANSWER");
+            SetAnswerText("Acertou");
             // Adicione aqui as ações a serem realizadas quando a resposta estiver correta
         }
         else
         {
             Debug.Log("WRONG ANSWER");
+            SetAnswerText("Errou");
             // Adicione aqui as ações a serem realizadas quando a resposta estiver incorreta
         }
     }
