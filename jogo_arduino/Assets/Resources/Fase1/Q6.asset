@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Q6
   m_EditorClassIdentifier: 
   question: "Qual \xE9 um micro controlador?"
-  correctAnswer: 2
+  correctAnswer: 0
   answers:
   - Imagem 1
   - Imagem 2
   - Imagem 3
   images:
-  - {fileID: 21300000, guid: e278538a5ac060d45992cf5242bad350, type: 3}
-  - {fileID: 21300000, guid: 8547af2f0b60448458545e320a2cd412, type: 3}
-  - {fileID: 21300000, guid: e278538a5ac060d45992cf5242bad350, type: 3}
+  - {fileID: 21300000, guid: 7f6f0ea87641147c58373e37d4be2b93, type: 3}
+  - {fileID: 21300000, guid: 4063293106ec0406690f443ae8ed0bbd, type: 3}
+  - {fileID: 21300000, guid: ccf924924071f4d3b813a9ec072a273d, type: 3}

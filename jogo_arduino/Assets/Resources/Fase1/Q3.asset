@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Q3
   m_EditorClassIdentifier: 
   question: "Quais s\xE3o as portas digitais?"
+  correctAnswer: 2
   answers:
   - Imagem 1
   - Imagem 2
   - Imagem 3
   images:
-  - {fileID: 21300000, guid: 508177c597e93a740a5c11902dfdc511, type: 3}
-  - {fileID: 21300000, guid: 9700d0f5aa97eec4f81750ce2ba24197, type: 3}
-  - {fileID: 21300000, guid: e88704b4b14d4154e8579bd62b2831c3, type: 3}
+  - {fileID: 21300000, guid: 7f6f0ea87641147c58373e37d4be2b93, type: 3}
+  - {fileID: 21300000, guid: dbec9948367804dd1a53c1f300fe4c89, type: 3}
+  - {fileID: 21300000, guid: 313ba5b86055e47bea06f64c163672ca, type: 3}

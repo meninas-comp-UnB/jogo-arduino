@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Q4
   m_EditorClassIdentifier: 
   question: "Qual \xE9 o GND?"
-  correctAnswer: 3
+  correctAnswer: 1
   answers:
   - Imagem 1
   - Imagem 2
   - Imagem 3
   images:
-  - {fileID: 21300000, guid: 2dcc92cdecddd2d43b861d26fc6a53fe, type: 3}
-  - {fileID: 21300000, guid: 2dcc92cdecddd2d43b861d26fc6a53fe, type: 3}
-  - {fileID: 21300000, guid: 2dcc92cdecddd2d43b861d26fc6a53fe, type: 3}
+  - {fileID: 21300000, guid: 313ba5b86055e47bea06f64c163672ca, type: 3}
+  - {fileID: 21300000, guid: ccf924924071f4d3b813a9ec072a273d, type: 3}
+  - {fileID: 21300000, guid: 6f1c1dacfd9cc4cb382e1356d0a88dc1, type: 3}
