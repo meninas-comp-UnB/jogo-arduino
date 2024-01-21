@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
   m_Name: Q1
   m_EditorClassIdentifier: 
-  question: "O que \xE9 um hardware?"
+  question: "Qual \xE9 o hardware?"
   correctAnswer: 0
   answers:
   - Arduino

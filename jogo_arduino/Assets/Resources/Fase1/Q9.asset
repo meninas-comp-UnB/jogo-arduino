@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
-  m_Name: Q5
+  m_Name: Q9
   m_EditorClassIdentifier: 
-  question: "Qual \xE9 a entrada de energia de 5V?"
-  correctAnswer: 2
+  question: Para que a porta Rx serve?
+  correctAnswer: 0
   answers:
-  - Imagem 1
-  - Imagem 2
-  - Imagem 3
+  - Receber
+  - Enviar
+  - Os dois
   images:
-  - {fileID: 21300000, guid: 4063293106ec0406690f443ae8ed0bbd, type: 3}
-  - {fileID: 21300000, guid: ccf924924071f4d3b813a9ec072a273d, type: 3}
-  - {fileID: 21300000, guid: dbec9948367804dd1a53c1f300fe4c89, type: 3}
+  - {fileID: 21300000, guid: a0894e53d0ac74ccea77873b08c579e5, type: 3}
+  - {fileID: 21300000, guid: 862a51886c62b43e8a77bd321e919220, type: 3}
+  - {fileID: 21300000, guid: b34c88070df2b43519ff0fb866504c87, type: 3}

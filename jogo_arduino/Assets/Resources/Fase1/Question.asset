@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
-  m_Name: Q5
+  m_Name: Question
   m_EditorClassIdentifier: 
-  question: "Qual \xE9 a entrada de energia de 5V?"
+  question: Para que a porta Tx serve?
   correctAnswer: 2
   answers:
-  - Imagem 1
-  - Imagem 2
-  - Imagem 3
+  - Receber
+  - Os dois
+  - Enviar
   images:
-  - {fileID: 21300000, guid: 4063293106ec0406690f443ae8ed0bbd, type: 3}
-  - {fileID: 21300000, guid: ccf924924071f4d3b813a9ec072a273d, type: 3}
-  - {fileID: 21300000, guid: dbec9948367804dd1a53c1f300fe4c89, type: 3}
+  - {fileID: 21300000, guid: 814084382079f474190566a86f942b41, type: 3}
+  - {fileID: 21300000, guid: 70cdb21f25d1140689f359d27a54ac30, type: 3}
+  - {fileID: 21300000, guid: 18cf0bb5ad95f4e75a7e319bdf13f851, type: 3}
