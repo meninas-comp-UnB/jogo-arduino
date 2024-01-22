@@ -5,42 +5,94 @@ using UnityEngine.UI;
 public class AnswerButton : MonoBehaviour
 {
     private bool isCorrect;
+    private bool hasBeenClicked = false;
     [SerializeField] private TextMeshProUGUI answerText;
+    [SerializeField] private Image answerImage;
+    private Image buttonImage;
+    private QuestionSetup questionSetup;
 
-    
-    [SerializeField] private Image answerImage; // Usando Image para exibir a Sprite
+    private Color originalColor;
 
-    // Método para configurar o texto da resposta e a Sprite
-    public void SetAnswerImage( Sprite newSprite)
+    public void Initialize(string answerText, Sprite answerImage, bool isCorrect)
+    {
+        this.isCorrect = isCorrect;
+        SetAnswerText(answerText);
+        SetAnswerImage(answerImage);
+    }
+
+    public void SetAnswerImage(Sprite newSprite)
     {
         answerImage.sprite = newSprite;
     }
+
     public void SetAnswerText(string newText)
     {
         answerText.text = newText;
     }
 
-
-    // Método para configurar se a resposta é correta ou não
-    public void SetIsCorrect(bool newBool)
+    public void ResetButtonAppearance()
     {
-        isCorrect = newBool;
+        hasBeenClicked = false;
+        buttonImage.color = originalColor;
+        GetComponent<Button>().interactable = true;
     }
 
-    // Método chamado quando o botão é clicado
-    public void OnClick()
+ public void OnClick()
     {
-        if (isCorrect)
+        if (!questionSetup.HasAnswered && !hasBeenClicked)
         {
-            Debug.Log("CORRECT ANSWER");
-            SetAnswerText("Acertou");
-            // Adicione aqui as ações a serem realizadas quando a resposta estiver correta
+            hasBeenClicked = true;
+            if (isCorrect)
+            {
+                Debug.Log("CORRECT ANSWER");
+                SetColorForAllButtons(Color.red);
+                ChangeButtonColor(new Color(0.0f, 0.5f, 0.0f)); // Verde mais escuro
+            }
+            else
+            {
+                Debug.Log("WRONG ANSWER");
+                SetColorForAllButtons(new Color(0.0f, 0.5f, 0.0f));
+                ChangeButtonColor(Color.red);
+            }
+
+            questionSetup.RegisterAnswer(isCorrect);
+            DisableOtherButtons();
         }
-        else
+    }
+
+    // Método para definir a cor para todos os botões
+    private void SetColorForAllButtons(Color color)
+    {
+        AnswerButton[] allButtons = FindObjectsOfType<AnswerButton>();
+
+        foreach (AnswerButton button in allButtons)
         {
-            Debug.Log("WRONG ANSWER");
-            SetAnswerText("Errou");
-            // Adicione aqui as ações a serem realizadas quando a resposta estiver incorreta
+            button.ChangeButtonColor(color);
+        }
+    }
+
+    private void Awake()
+    {
+        buttonImage = GetComponent<Image>();
+        originalColor = buttonImage.color;
+        questionSetup = FindObjectOfType<QuestionSetup>();
+    }
+
+    private void ChangeButtonColor(Color newColor)
+    {
+        buttonImage.color = newColor;
+    }
+
+    private void DisableOtherButtons()
+    {
+        AnswerButton[] allButtons = FindObjectsOfType<AnswerButton>();
+
+        foreach (AnswerButton button in allButtons)
+        {
+            if (button != this)
+            {
+                button.GetComponent<Button>().interactable = false;
+            }
         }
     }
 }
