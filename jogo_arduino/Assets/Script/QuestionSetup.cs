@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuestionSetup : MonoBehaviour
 {
@@ -15,9 +16,16 @@ public class QuestionSetup : MonoBehaviour
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private TextMeshProUGUI resultText;
     [SerializeField] private Image resultImage;
+    [SerializeField] private Button playAgainButton;
+    [SerializeField] private Button backButton;
+
+    [SerializeField] private Sprite spriteForPass; // Atribua no Unity
+    [SerializeField] private Sprite spriteForFail; // Atribua no Unity
+    [SerializeField] private Image finalImage;
 
     private int index = 1;
     private bool hasAnswered = false;
+    private int correctAnswersCount = 0;
 
     private void Awake()
     {
@@ -35,6 +43,10 @@ public class QuestionSetup : MonoBehaviour
         {
             hasAnswered = true;
             SetNextQuestion();
+        }
+        else if (index > 5)
+        {
+            ShowResultPanel();
         }
     }
 
@@ -86,13 +98,47 @@ public class QuestionSetup : MonoBehaviour
             button.ResetButtonAppearance();
         }
     }
-    public bool HasAnswered
-    {
-        get { return hasAnswered; }
-    }
+
     public void RegisterAnswer(bool isCorrect)
     {
         // Adicione lógica para processar a resposta, se necessário
         // Exemplo: Atualizar pontuação, mostrar painel de resultado, etc.
+        if (isCorrect)
+        {
+            correctAnswersCount++;
+        }
+    }
+
+    private void ShowResultPanel()
+    {
+        if (correctAnswersCount >= 3)
+        {
+            resultText.text = $"Parabéns! Você acertou {correctAnswersCount} de 5 perguntas!";
+            finalImage.sprite = spriteForPass;
+        }
+        else
+        {
+            resultText.text = $"Você acertou {correctAnswersCount} de 5 perguntas. Melhore na próxima vez!";
+            finalImage.sprite = spriteForFail;
+        }
+
+        resultPanel.SetActive(true);
+        playAgainButton.gameObject.SetActive(true);
+        backButton.gameObject.SetActive(true);
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("Mini-Game");
+    }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene("Fase-1");
+    }
+
+    public bool HasAnswered
+    {
+    get { return hasAnswered; }
     }
 }

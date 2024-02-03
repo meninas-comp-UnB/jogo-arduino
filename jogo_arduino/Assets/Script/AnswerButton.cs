@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class AnswerButton : MonoBehaviour
 {
+
     private bool isCorrect;
     private bool hasBeenClicked = false;
     [SerializeField] private TextMeshProUGUI answerText;
@@ -37,28 +38,27 @@ public class AnswerButton : MonoBehaviour
         GetComponent<Button>().interactable = true;
     }
 
- public void OnClick()
+public void OnClick()
+{
+    if (!questionSetup.HasAnswered && !hasBeenClicked)
     {
-        if (!questionSetup.HasAnswered && !hasBeenClicked)
+        hasBeenClicked = true;
+        if (isCorrect)
         {
-            hasBeenClicked = true;
-            if (isCorrect)
-            {
-                Debug.Log("CORRECT ANSWER");
-                SetColorForAllButtons(Color.red);
-                ChangeButtonColor(new Color(0.0f, 0.5f, 0.0f)); // Verde mais escuro
-            }
-            else
-            {
-                Debug.Log("WRONG ANSWER");
-                SetColorForAllButtons(new Color(0.0f, 0.5f, 0.0f));
-                ChangeButtonColor(Color.red);
-            }
-
-            questionSetup.RegisterAnswer(isCorrect);
-            DisableOtherButtons();
+            Debug.Log("CORRECT ANSWER");
+            ChangeButtonColor(new Color(0.0f, 0.5f, 0.0f)); // Verde mais escuro
         }
+        else
+        {
+            Debug.Log("WRONG ANSWER");
+            ChangeButtonColor(Color.red);
+        }
+
+        questionSetup.RegisterAnswer(isCorrect);
+        DisableOtherButtons();
     }
+}
+
 
     // Método para definir a cor para todos os botões
     private void SetColorForAllButtons(Color color)
