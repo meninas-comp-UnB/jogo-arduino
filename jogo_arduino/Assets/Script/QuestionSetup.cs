@@ -113,7 +113,7 @@ public class QuestionSetup : MonoBehaviour
     {
         if (correctAnswersCount >= 3)
         {
-            resultText.text = $"Parabéns! Você acertou {correctAnswersCount} de 5 perguntas!";
+            resultText.text = $"Parabéns pela conquista! Você acertou {correctAnswersCount} de 5 perguntas!";
             finalImage.sprite = spriteForPass;
         }
         else
