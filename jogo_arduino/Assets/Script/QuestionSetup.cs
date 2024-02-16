@@ -9,6 +9,7 @@ public class QuestionSetup : MonoBehaviour
 {
     [SerializeField] private List<QuestionData> questions;
     private QuestionData currentQuestion;
+    public bool tutorial_version;
 
     [SerializeField] private TextMeshProUGUI questionText;
     [SerializeField] private AnswerButton[] answerButtons;

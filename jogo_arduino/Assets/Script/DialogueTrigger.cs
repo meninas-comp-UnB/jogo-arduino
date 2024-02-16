@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
+    public bool tutorialVersion;
 
     public Sprite[] profile;
     public Sprite[] slide;
@@ -42,7 +43,12 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             playerInRange = true;
-             DialogueManager.GetInstance().Speech(profile, speechText, actorNameText, slide);
+            if(tutorialVersion == true){
+                DialogueTutorial.GetInstance().Speech(profile, speechText, actorNameText, slide);
+            }else{
+              DialogueManager.GetInstance().Speech(profile, speechText, actorNameText, slide);  
+            }
+            
         }
     }
 
