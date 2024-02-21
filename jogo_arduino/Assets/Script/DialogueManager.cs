@@ -8,14 +8,14 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     [Header("Components")]
-   // [SerializeField] private GameObject dialoguePanel;
-
     public GameObject dialoguePanel;
     public Image profile;
     public Image slide;
+    public Image newImageUI; // Image da UI a ser alterada
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI actorNameText;
     private int index;
+    public Sprite newImage;
 
     [Header("Settings")] 
     public float typingSpeed;
@@ -24,15 +24,9 @@ public class DialogueManager : MonoBehaviour
     private Sprite[] rostos;
     private string[] nomes;
 
-
-   // [SerializeField] private TextMeshProUGUI dialogueText;
-
-   // private Story currentStory;
-
-    private bool dialogueIsPlaying;
-
+    private bool changeImage = false; // Flag para indicar se a imagem deve ser alterada
+    
     private static DialogueManager instance;
-
 
     private void Awake() 
     {
@@ -41,8 +35,6 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
-
-
     }
 
     public static DialogueManager GetInstance() 
@@ -51,28 +43,25 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void Start(){
-        dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
-
-
-
     }
 
-    public void Speech( Sprite[] p, string[] txt, string[] actorName, Sprite[] Slide)
-{
-        dialogueIsPlaying = true;
+    public void Speech(Sprite[] p, string[] txt, string[] actorName, Sprite[] Slide, bool changeImage = false)
+    {
         dialoguePanel.SetActive(true);
         rostos = p;
         sentences = txt;
         nomes = actorName;
         aula = Slide; 
-      //  profile.sprite = rostos[0];
-        //actorNameText.text = nomes[0];
-        //slide.sprite = aula[0]; 
-        StartCoroutine(TypeSentece());
-}
+        this.changeImage = changeImage; // Define a flag para alterar a imagem
+      //  if (changeImage && newImageUI != null) // Se a flag changeImage estiver definida e a Image da UI não for nula
+      ////  {
+            //newImageUI.sprite = newImage; // Altera a sprite da Image da UI
+       // }
+        StartCoroutine(TypeSentence());
+    }
 
-    IEnumerator TypeSentece(){
+    IEnumerator TypeSentence(){
         profile.sprite = rostos[index];
         actorNameText.text = nomes[index];
         slide.sprite = aula[index]; 
@@ -80,18 +69,18 @@ public class DialogueManager : MonoBehaviour
             speechText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-   
     }
 
     public void NextSentence(){
         if(speechText.text == sentences[index]){
-            //ainda tem textos
             if(index < sentences.Length -1){
-
                 index++;
                 speechText.text = "";
-                StartCoroutine(TypeSentece());
-            }else{// quando acabar
+                StartCoroutine(TypeSentence());
+            }else{
+                if(changeImage){
+                    newImageUI.sprite = newImage; 
+                }
                 speechText.text = "";
                 index = 0;
                 dialoguePanel.SetActive(false);
@@ -99,23 +88,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-
-    private void Update(){
-        if(!dialogueIsPlaying){
-            return;
-        }
-
-    }
     public void StopDialogue(){
         speechText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-   }
-
-    public void ExitDialogueMode(){
-        dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
-       // dialogueText.text = "";
     }
 
+    public void ExitDialogueMode(){
+        dialoguePanel.SetActive(false);
+    }
 }

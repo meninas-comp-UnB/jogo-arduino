@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
   m_Name: Q10
   m_EditorClassIdentifier: 
-  question: Para que a porta Tx serve?
+  question: "O que a porta Tx \xE9 usada para fazer em um Arduino?"
   correctAnswer: 2
   answers:
   - Receber

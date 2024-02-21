@@ -1785,8 +1785,8 @@ RectTransform:
   - {fileID: 1900583393}
   - {fileID: 1142640759}
   - {fileID: 522059161}
-  - {fileID: 1582100922}
   - {fileID: 1896054966}
+  - {fileID: 1582100922}
   - {fileID: 316335445}
   - {fileID: 199886600}
   m_Father: {fileID: 0}
@@ -2631,6 +2631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 587354813}
   tutorialVersion: 0
+  changeImage: 1
   profile:
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
@@ -3679,6 +3680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 286473828}
   tutorialVersion: 0
+  changeImage: 0
   profile:
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
@@ -5245,6 +5247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 317275667}
   tutorialVersion: 0
+  changeImage: 1
   profile:
   - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
   - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
@@ -5261,7 +5264,7 @@ MonoBehaviour:
   - Estou bem animada para a aula de hoje.
   - "Ouvi falar bastante sobre o Arduino, mas n\xE3o tenho ideia de onde posso us\xE1-lo."
   - "Que m\xE1ximo! Ent\xE3o hoje aprenderemos sobre Arduino?"
-  - Isso mesmo, vi em nosso plano de esino e vi que iremos aprender bastante nesse
+  - Isso mesmo, vi em nosso plano de ensino e vi que iremos aprender bastante nesse
     curso!
   - "Obrigada, irei prestar bastante aten\xE7\xE3o nas aula, n\xE3o quero perder
     nada!"
@@ -5541,7 +5544,7 @@ RectTransform:
   m_Children:
   - {fileID: 1797889089}
   m_Father: {fileID: 505705961}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -5812,8 +5815,10 @@ MonoBehaviour:
   dialoguePanel: {fileID: 316335444}
   profile: {fileID: 1456675363}
   slide: {fileID: 692472703}
+  newImageUI: {fileID: 1391136640}
   speechText: {fileID: 641769757}
   actorNameText: {fileID: 1768110003}
+  newImage: {fileID: 21300000, guid: 1c978d81728b240deb078a60de90f45e, type: 3}
   typingSpeed: 0.0001
 --- !u!114 &1618418890
 MonoBehaviour:
@@ -6276,7 +6281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -393.99994, y: -211.04155}
+  m_AnchoredPosition: {x: -393.99994, y: -199}
   m_SizeDelta: {x: 859.99994, y: 466.0831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797889090
@@ -7185,6 +7190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1677994512}
   tutorialVersion: 1
+  changeImage: 0
   profile:
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
@@ -7287,7 +7293,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 505705961}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -7578,7 +7584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.322, y: 113.439}
+  m_AnchoredPosition: {x: 0, y: 113.439}
   m_SizeDelta: {x: 576.058, y: 72.754}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925955244
@@ -8155,7 +8161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.227, y: -13.983}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 803.454, y: 399.022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113755199

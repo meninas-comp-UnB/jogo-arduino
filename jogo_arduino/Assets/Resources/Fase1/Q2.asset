@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
   m_Name: Q2
   m_EditorClassIdentifier: 
-  question: "Quais s\xE3o as portas analogicas?"
+  question: "Onde est\xE3o localizadas as portas anal\xF3gicas?"
   correctAnswer: 1
   answers:
   - Imagem 1
