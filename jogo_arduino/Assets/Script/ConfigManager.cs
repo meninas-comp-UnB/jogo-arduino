@@ -76,4 +76,12 @@ public class ConfigManager : MonoBehaviour
       // Application.Quit();
 
     }
+
+    public void QuitScene()
+    {
+
+        configPanel.SetActive(false);
+
+
+    }
 }
