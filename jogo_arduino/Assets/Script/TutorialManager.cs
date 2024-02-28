@@ -64,7 +64,7 @@ public class TutorialManager : MonoBehaviour
 
 
     public void NextSentence(){
-        if(index < 2){
+        if(index < 6){
             examples.GetComponent<Image>().sprite = telas[index];
             index++;
         }else{// quando acabar

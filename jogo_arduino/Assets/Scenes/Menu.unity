@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &298538592
 RectTransform:
   m_ObjectHideFlags: 0
@@ -370,7 +370,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2.0461, y: 2.25}
-  m_SizeDelta: {x: 762.92, y: 381.46}
+  m_SizeDelta: {x: 795, y: 402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365273667
 MonoBehaviour:
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c331ddb4c3a464e3c965f1b4c8a94560, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b55a99597089487bbe96bf4854d731c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -472,8 +472,12 @@ MonoBehaviour:
   tutorialPanel: {fileID: 298538591}
   examples: {fileID: 365273667}
   ex:
-  - {fileID: 21300000, guid: c331ddb4c3a464e3c965f1b4c8a94560, type: 3}
-  - {fileID: 21300000, guid: 14511a81a10904c4d89f331e1af8683a, type: 3}
+  - {fileID: 21300000, guid: 4b55a99597089487bbe96bf4854d731c, type: 3}
+  - {fileID: 21300000, guid: 767df56799a0940f6b5f33eaa4d4ba32, type: 3}
+  - {fileID: 21300000, guid: 175f8cad8f5e84ba597075553eb7d84e, type: 3}
+  - {fileID: 21300000, guid: 2b687c29b41474d3789603d34779c7e7, type: 3}
+  - {fileID: 21300000, guid: a42e432464d5f4b10ba996432fb1ecac, type: 3}
+  - {fileID: 21300000, guid: 4d8c2aaf4961a4769a5a0c29206c1019, type: 3}
   index: 1
 --- !u!1 &470313324
 GameObject:
