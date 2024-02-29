@@ -7326,41 +7326,45 @@ MonoBehaviour:
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
-  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   slide:
-  - {fileID: 21300000, guid: a4107e093347a486e94a558deda6d30a, type: 3}
-  - {fileID: 21300000, guid: a4107e093347a486e94a558deda6d30a, type: 3}
-  - {fileID: 21300000, guid: a4107e093347a486e94a558deda6d30a, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: 28b15ebfcbe054227beab36febabcf65, type: 3}
+  - {fileID: 21300000, guid: 2b4a062b026f140778e08dc0c66597da, type: 3}
+  - {fileID: 21300000, guid: 3e2dfa1bd88b64b889596b92c2e2e41f, type: 3}
+  - {fileID: 21300000, guid: 92f154a40077a4bb8aa81699170083e5, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
   speechText:
   - "Ol\xE1 Ame, seja bem-vinda ao laborat\xF3rio!"
   - "Aqui voc\xEA ir\xE1 testar o que aprendeu."
   - "Ser\xE1 um question\xE1rio com 5 quest\xF5es."
+  - "Como funciona o question\xE1rio?"
+  - "Ir\xE1 aparecer uma pergunta na tela"
+  - "E tamb\xE9m 3 alternativas de resposta"
+  - Sendo somente uma a verdadeira.
   - "\xC9 necess\xE1rio acerter 3 dessas 5 quest\xF5es"
-  - Onde posso revisar?
-  - Aqui na mochila, tem resumos do que aprendeu na fase
-  - "\xC9 \xF3timo para relembrar."
-  - "Quando conseguir ganhar\xE1 uma conquista"
+  - "Quando conseguir, ganhar\xE1 uma conquista"
   - "E a pr\xF3xima fase \xE9 liberada."
-  - Bom jogo Ame!
+  - Aperte em inciar quiz e bom jogo!
   actorNameText:
   - Carlona
   - Carlona
   - Carlona
-  - Carlona
   - Ame
+  - Carlona
+  - Carlona
   - Carlona
   - Carlona
   - Carlona
