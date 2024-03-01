@@ -11,11 +11,13 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialoguePanel;
     public Image profile;
     public Image slide;
-    public Image newImageUI; // Image da UI a ser alterada
+    public Image theoricImage; // Image da UI a ser alterada
+    public Image practiceImage;
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI actorNameText;
     private int index;
-    public Sprite newImage;
+    public Sprite newImageTheoric;
+    public Sprite newImagePractice;
 
     [Header("Settings")] 
     public float typingSpeed;
@@ -35,6 +37,14 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
+        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1){
+            theoricImage.sprite = newImageTheoric;
+        }
+        if(PlayerPrefs.GetInt("PracticeImage", 0) == 1){
+            practiceImage.sprite = newImagePractice;
+        }
+        
+
     }
 
     public static DialogueManager GetInstance() 
@@ -54,10 +64,6 @@ public class DialogueManager : MonoBehaviour
         nomes = actorName;
         aula = Slide; 
         this.changeImage = changeImage; // Define a flag para alterar a imagem
-      //  if (changeImage && newImageUI != null) // Se a flag changeImage estiver definida e a Image da UI não for nula
-      ////  {
-            //newImageUI.sprite = newImage; // Altera a sprite da Image da UI
-       // }
         StartCoroutine(TypeSentence());
     }
 
@@ -79,7 +85,10 @@ public class DialogueManager : MonoBehaviour
                 StartCoroutine(TypeSentence());
             }else{
                 if(changeImage){
-                    newImageUI.sprite = newImage; 
+                    // Define a preferência de imagem alterada como 1
+                    PlayerPrefs.SetInt("ImageChanged", 1);
+                    PlayerPrefs.Save();
+                    theoricImage.sprite = newImageTheoric; 
                 }
                 speechText.text = "";
                 index = 0;

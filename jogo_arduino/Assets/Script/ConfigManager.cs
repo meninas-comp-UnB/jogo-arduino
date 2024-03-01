@@ -71,9 +71,9 @@ public class ConfigManager : MonoBehaviour
         public void QuitGame()
     {
         //Unity
-        UnityEditor.EditorApplication.isPlaying = false;
+      //  UnityEditor.EditorApplication.isPlaying = false;
         //Demo
-      // Application.Quit();
+       Application.Quit();
 
     }
 

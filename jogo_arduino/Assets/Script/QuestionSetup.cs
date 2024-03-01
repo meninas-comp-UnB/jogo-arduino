@@ -116,6 +116,8 @@ public class QuestionSetup : MonoBehaviour
         {
             resultText.text = $"Parabéns pela conquista! Você acertou {correctAnswersCount} de 5 perguntas!";
             finalImage.sprite = spriteForPass;
+            PlayerPrefs.SetInt("PracticeImage", 1);
+            PlayerPrefs.Save();
         }
         else
         {
