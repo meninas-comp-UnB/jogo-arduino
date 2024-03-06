@@ -2034,9 +2034,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162170339}
-        m_TargetAssemblyTypeName: ConfigManager, Assembly-CSharp
-        m_MethodName: changeScene
+      - m_Target: {fileID: 1162170340}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeToPhasesMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2667,44 +2667,50 @@ MonoBehaviour:
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
+  - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
   slide:
-  - {fileID: 21300000, guid: a4107e093347a486e94a558deda6d30a, type: 3}
-  - {fileID: 21300000, guid: a4107e093347a486e94a558deda6d30a, type: 3}
-  - {fileID: 21300000, guid: a4107e093347a486e94a558deda6d30a, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: c0531c8dca4d248549f7a7d6c4c773be, type: 3}
-  - {fileID: 21300000, guid: 1613574b660be4cecb5f0895914072df, type: 3}
-  - {fileID: 21300000, guid: 1613574b660be4cecb5f0895914072df, type: 3}
-  - {fileID: 21300000, guid: 1613574b660be4cecb5f0895914072df, type: 3}
-  - {fileID: 21300000, guid: dae1b1f1352714767a53c12d8e7e1fb0, type: 3}
-  - {fileID: 21300000, guid: 891de1d34f97b40fa91b9289e5a84dd0, type: 3}
-  - {fileID: 21300000, guid: 891de1d34f97b40fa91b9289e5a84dd0, type: 3}
-  - {fileID: 21300000, guid: 891de1d34f97b40fa91b9289e5a84dd0, type: 3}
-  - {fileID: 21300000, guid: 891de1d34f97b40fa91b9289e5a84dd0, type: 3}
-  - {fileID: 21300000, guid: 891de1d34f97b40fa91b9289e5a84dd0, type: 3}
-  - {fileID: 21300000, guid: 891de1d34f97b40fa91b9289e5a84dd0, type: 3}
-  - {fileID: 21300000, guid: 7e1b0760ea03e47d1a91d6d845c449ad, type: 3}
-  - {fileID: 21300000, guid: 7e1b0760ea03e47d1a91d6d845c449ad, type: 3}
-  - {fileID: 21300000, guid: 7e1b0760ea03e47d1a91d6d845c449ad, type: 3}
-  - {fileID: 21300000, guid: 7e1b0760ea03e47d1a91d6d845c449ad, type: 3}
-  - {fileID: 21300000, guid: 7e1b0760ea03e47d1a91d6d845c449ad, type: 3}
-  - {fileID: 21300000, guid: 1ba9af9333d124c7a8ec6887ff771d61, type: 3}
-  - {fileID: 21300000, guid: 1ba9af9333d124c7a8ec6887ff771d61, type: 3}
-  - {fileID: 21300000, guid: 6021c5605d75e430caaf5881b6adc39b, type: 3}
-  - {fileID: 21300000, guid: 6021c5605d75e430caaf5881b6adc39b, type: 3}
-  - {fileID: 21300000, guid: c76a0b78ec10b49f8804d00af1216e4b, type: 3}
-  - {fileID: 21300000, guid: 3847e774915e84a4ebe16b3af0ee87b8, type: 3}
-  - {fileID: 21300000, guid: 6d1169e3da11a46339c04e1fe4b197be, type: 3}
-  - {fileID: 21300000, guid: 6d1169e3da11a46339c04e1fe4b197be, type: 3}
-  - {fileID: 21300000, guid: 6d1169e3da11a46339c04e1fe4b197be, type: 3}
-  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: d52968f5c4179034686eab45273e731b, type: 3}
+  - {fileID: 21300000, guid: d52968f5c4179034686eab45273e731b, type: 3}
+  - {fileID: 21300000, guid: d52968f5c4179034686eab45273e731b, type: 3}
+  - {fileID: 21300000, guid: d2b02cb6a5cde5d4b9c229609da44563, type: 3}
+  - {fileID: 21300000, guid: d2b02cb6a5cde5d4b9c229609da44563, type: 3}
+  - {fileID: 21300000, guid: d2b02cb6a5cde5d4b9c229609da44563, type: 3}
+  - {fileID: 21300000, guid: d2b02cb6a5cde5d4b9c229609da44563, type: 3}
+  - {fileID: 21300000, guid: 88a60997b36ee784b827976308302acd, type: 3}
+  - {fileID: 21300000, guid: 88a60997b36ee784b827976308302acd, type: 3}
+  - {fileID: 21300000, guid: 88a60997b36ee784b827976308302acd, type: 3}
+  - {fileID: 21300000, guid: 212aeb074f8098b4f96b1634ded90e83, type: 3}
+  - {fileID: 21300000, guid: 212aeb074f8098b4f96b1634ded90e83, type: 3}
+  - {fileID: 21300000, guid: 212aeb074f8098b4f96b1634ded90e83, type: 3}
+  - {fileID: 21300000, guid: 20f689fd15e1e65499c4cd185b44e33a, type: 3}
+  - {fileID: 21300000, guid: f0ab5db6fddc262408533077140620a0, type: 3}
+  - {fileID: 21300000, guid: f0ab5db6fddc262408533077140620a0, type: 3}
+  - {fileID: 21300000, guid: f0ab5db6fddc262408533077140620a0, type: 3}
+  - {fileID: 21300000, guid: f0ab5db6fddc262408533077140620a0, type: 3}
+  - {fileID: 21300000, guid: f0ab5db6fddc262408533077140620a0, type: 3}
+  - {fileID: 21300000, guid: f0ab5db6fddc262408533077140620a0, type: 3}
+  - {fileID: 21300000, guid: a68424d1a444e2d408f8b95bfa95a0cd, type: 3}
+  - {fileID: 21300000, guid: a68424d1a444e2d408f8b95bfa95a0cd, type: 3}
+  - {fileID: 21300000, guid: a68424d1a444e2d408f8b95bfa95a0cd, type: 3}
+  - {fileID: 21300000, guid: a68424d1a444e2d408f8b95bfa95a0cd, type: 3}
+  - {fileID: 21300000, guid: a68424d1a444e2d408f8b95bfa95a0cd, type: 3}
+  - {fileID: 21300000, guid: 457cad2741bce8844bb4f1fdcd6e2d37, type: 3}
+  - {fileID: 21300000, guid: 457cad2741bce8844bb4f1fdcd6e2d37, type: 3}
+  - {fileID: 21300000, guid: d2349d7a7aa694b49a2c822518ec56e1, type: 3}
+  - {fileID: 21300000, guid: d2349d7a7aa694b49a2c822518ec56e1, type: 3}
+  - {fileID: 21300000, guid: d2349d7a7aa694b49a2c822518ec56e1, type: 3}
+  - {fileID: 21300000, guid: 9bb5889559098c24fad35c6acf37a3ee, type: 3}
+  - {fileID: 21300000, guid: 9bb5889559098c24fad35c6acf37a3ee, type: 3}
+  - {fileID: 21300000, guid: 9bb5889559098c24fad35c6acf37a3ee, type: 3}
+  - {fileID: 21300000, guid: 0bc21ed6f37fdec4aac15bfd45628e0e, type: 3}
+  - {fileID: 21300000, guid: 7029bfa740e141843b3b1ec41a5a9f8f, type: 3}
+  - {fileID: 21300000, guid: 7029bfa740e141843b3b1ec41a5a9f8f, type: 3}
+  - {fileID: 21300000, guid: 7029bfa740e141843b3b1ec41a5a9f8f, type: 3}
+  - {fileID: 21300000, guid: 414ab8cdc97aa274abc2d3919d357e16, type: 3}
   speechText:
   - "Bom dia, queridas alunas! Eu sou Carla Feiju, mas fiquem \xE0 vontade para me
     chamar carinhosamente de Carlona."
@@ -2726,7 +2732,8 @@ MonoBehaviour:
     de dispositivos eletr\xF4nicos."
   - "Aqui, apresentam-se alguns exemplos de hardware externo, que s\xE3o componentes
     vis\xEDveis."
-  - "E o hardware interno, que s\xE3o os componentes que n\xE3o se fazem vis\xEDveis."
+  - "E o hardware interno s\xE3o as partes do computador que est\xE3o escondidas
+    dentro dele e que n\xE3o podemos ver.     "
   - "Voc\xEAs est\xE3o familiarizados com o conceito de microcontrolador?"
   - Isso seria como um tipo de controle em tamanho reduzido?
   - Seria um videogame?
@@ -2744,10 +2751,17 @@ MonoBehaviour:
   - como por exemplo 5V, que serve para dar energia ao Arduino,
   - "o GND seria como a \"terra\" de um circuito, e temos portas anal\xF3gicas, digitais
     e portas PWM."
-  - "As portas anal\xF3gicas s\xE3o portas que fornecem o valor  "
+  - "As portas anal\xF3gicas s\xE3o portas que fornecem o valor, Geralmente s\xE3o
+    usadas para ler sensores  "
+  - "que geram sinais anal\xF3gicos, como sensores de temperatura, luz, som, entre
+    outros"
   - "s\xE3o como portas que medem a voltagem, e essa voltagem fica entre um valor
     m\xEDnimo e um valor m\xE1ximo."
   - "As portas digitais s\xE3o como canais de conversa do Arduino com outros componentes."
+  - "Elas podem variar em ligado (HIGH) ou desligado (LOW), representados por 1 ou
+    0. S\xE3o utilizadas principalmente"
+  - "para opera\xE7\xF5es de l\xF3gica digital, como ligar ou desligar LEDs, acionar
+    rel\xE9s, ler bot\xF5es, entre outros"
   - "Nessas portas, a TX \xE9 para enviar (transmitir) e a RX \xE9 para receber (recepcionar)."
   - "As portas PWM s\xE3o como portas m\xE1gicas que conseguem criar efeitos anal\xF3gicos
     usando truques digitais,"
@@ -2779,6 +2793,9 @@ MonoBehaviour:
   - Ame
   - Carlona
   - Ana
+  - Carlona
+  - Carlona
+  - Carlona
   - Carlona
   - Carlona
   - Carlona
@@ -4692,6 +4709,7 @@ GameObject:
   - component: {fileID: 1162170337}
   - component: {fileID: 1162170338}
   - component: {fileID: 1162170339}
+  - component: {fileID: 1162170340}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4727,7 +4745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167a6633d44966c4d89662753b2e9c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cena: Menu
+  cena: Tela-Fases
   secondScena: Mini-Game
 --- !u!114 &1162170339
 MonoBehaviour:
@@ -4743,6 +4761,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cena: Menu
   configPanel: {fileID: 1797889088}
+--- !u!114 &1162170340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162170335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de477a270b31193459ae2062ab0c0c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1193311171
 GameObject:
   m_ObjectHideFlags: 0
@@ -8194,7 +8224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -0.9369999}
+  m_AnchoredPosition: {x: 0, y: -0.9369999}
   m_SizeDelta: {x: 1000, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2071550179
