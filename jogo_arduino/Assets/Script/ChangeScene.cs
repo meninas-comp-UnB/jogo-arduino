@@ -17,7 +17,10 @@ public void ChangeToScene(string sceneName)
 
     public void ChangeToPhase2()
     {
-        ChangeToScene("Menu");
+        if(PlayerPrefs.GetInt("Phase2", 0) == 1){
+            ChangeToScene("Fase-2");
+        }
+        
     }
     public void ChangeToPhasesMenu()
     {

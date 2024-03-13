@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tela-Fases.unity
     guid: ad62c611d55d91d4f9e1af4d904f374b
+  - enabled: 1
+    path: Assets/Scenes/Fase_2/Fase-2.unity
+    guid: e95a3ca0bbab3f845a57126c5a4dae1c
   m_configObjects: {}

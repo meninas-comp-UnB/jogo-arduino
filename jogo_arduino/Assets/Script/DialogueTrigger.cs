@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
     public bool tutorialVersion;
+    public int phase; 
 
     public bool changeImage; // Flag para indicar se a sprite deve ser alterada
 
@@ -49,7 +50,14 @@ public class DialogueTrigger : MonoBehaviour
                 DialogueTutorial.GetInstance().Speech(profile, speechText, actorNameText, slide);
             }else{
                 // Passa a nova sprite ao chamar o diálogo
-                DialogueManager.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);  
+                if(phase ==  1){
+                    DialogueManager.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
+                }else if(phase == 2){
+                    DialogueManager2.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);  
+
+                }
+                
+                
             }
             dialogueIsPlaying = true; // Define a flag como true quando o diálogo é iniciado
         }

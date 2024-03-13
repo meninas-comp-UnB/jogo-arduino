@@ -4,10 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
-public class DialogueManager : MonoBehaviour
+public class DialogueManager2 : MonoBehaviour
 {
-    [Header("Components")]
+[Header("Components")]
     public GameObject dialoguePanel;
     public Image profile;
     public Image slide;
@@ -28,7 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     private bool changeImage = false; // Flag para indicar se a imagem deve ser alterada
     
-    private static DialogueManager instance;
+    private static DialogueManager2 instance;
 
     private void Awake() 
     {
@@ -37,18 +36,18 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
-        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1){
+        if(PlayerPrefs.GetInt("ImageChanged2", 0) == 1){
             theoricImage.sprite = newImageTheoric;
         }
-        if(PlayerPrefs.GetInt("PracticeImage", 0) == 1){
+        if(PlayerPrefs.GetInt("ImageChanged2", 0) == 1 && PlayerPrefs.GetInt("PracticeImage2", 0) == 1){
             practiceImage.sprite = newImagePractice;
 
         }
         
 
     }
-
-    public static DialogueManager GetInstance() 
+    
+    public static DialogueManager2 GetInstance() 
     {
         return instance;
     }
@@ -87,7 +86,7 @@ public class DialogueManager : MonoBehaviour
             }else{
                 if(changeImage){
                     // Define a preferência de imagem alterada como 1
-                    PlayerPrefs.SetInt("ImageChanged", 1);
+                    PlayerPrefs.SetInt("ImageChanged2", 1);
                     PlayerPrefs.Save();
                     theoricImage.sprite = newImageTheoric; 
                 }
@@ -107,4 +106,5 @@ public class DialogueManager : MonoBehaviour
     public void ExitDialogueMode(){
         dialoguePanel.SetActive(false);
     }
+
 }
