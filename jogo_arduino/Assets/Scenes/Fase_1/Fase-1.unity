@@ -5281,7 +5281,7 @@ MonoBehaviour:
   visualCue: {fileID: 317275667}
   tutorialVersion: 0
   phase: 1
-  changeImage: 1
+  changeImage: 0
   profile:
   - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
   - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}

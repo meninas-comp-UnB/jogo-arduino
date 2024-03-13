@@ -5256,31 +5256,82 @@ MonoBehaviour:
   phase: 2
   changeImage: 1
   profile:
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
   - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
-  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
   - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
-  - {fileID: 21300000, guid: 5b6a7e7b03f934667aa804131dea1451, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
   - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
+  - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
+  - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
   slide:
-  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
-  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
-  - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
+  - {fileID: 21300000, guid: 0ee44d8ad81fa469fac65c0010eccc78, type: 3}
+  - {fileID: 21300000, guid: 0ee44d8ad81fa469fac65c0010eccc78, type: 3}
+  - {fileID: 21300000, guid: 65ae3714fba834d2fac5e3d6caeeee13, type: 3}
+  - {fileID: 21300000, guid: 65ae3714fba834d2fac5e3d6caeeee13, type: 3}
+  - {fileID: 21300000, guid: 3989a0b2cae01423fb298fdbc1b2a7d0, type: 3}
+  - {fileID: 21300000, guid: 3989a0b2cae01423fb298fdbc1b2a7d0, type: 3}
+  - {fileID: 21300000, guid: 8e6590b7db19b47a69aadf20dfbf2b92, type: 3}
+  - {fileID: 21300000, guid: 8e6590b7db19b47a69aadf20dfbf2b92, type: 3}
+  - {fileID: 21300000, guid: 7bf40cf8d84b94bf4ab14fcc692cd81b, type: 3}
+  - {fileID: 21300000, guid: 7bf40cf8d84b94bf4ab14fcc692cd81b, type: 3}
+  - {fileID: 21300000, guid: 7bf40cf8d84b94bf4ab14fcc692cd81b, type: 3}
+  - {fileID: 21300000, guid: 6ac65adf1c6f34fe0bfb1e60954302a9, type: 3}
+  - {fileID: 21300000, guid: 6ac65adf1c6f34fe0bfb1e60954302a9, type: 3}
+  - {fileID: 21300000, guid: 6ac65adf1c6f34fe0bfb1e60954302a9, type: 3}
   - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
   - {fileID: 21300000, guid: f126bff700ae64eb6b5b02f94060fdda, type: 3}
   speechText:
-  - oiiiiiiiii
-  - "Ouvi falar bastante sobre o Arduino, mas n\xE3o tenho ideia de onde posso us\xE1-lo."
-  - "Que m\xE1ximo! Ent\xE3o hoje aprenderemos sobre Arduino?"
-  - Isso mesmo, vi em nosso plano de ensino e vi que iremos aprender bastante nesse
-    curso!
-  - "Obrigada, irei prestar bastante aten\xE7\xE3o nas aula, n\xE3o quero perder
-    nada!"
+  - "Ei, voc\xEA j\xE1 ouviu falar sobre Ada Lovelace?"
+  - "Hmm, acho que sim. Ela n\xE3o foi uma pioneira da computa\xE7\xE3o?"
+  - "Sim, exatamente! Ela \xE9 conhecida como a primeira programadora do mundo."
+  - "Uau, isso \xE9 impressionante! Mas como algu\xE9m se torna a primeira programadora?"
+  - "Bem, Ada Lovelace viveu no s\xE9culo XIX e trabalhou com Charles Babbage, um
+    inventor brit\xE2nico"
+  - "que projetou a M\xE1quina Anal\xEDtica, um dos primeiros modelos de computador
+    mec\xE2nico."
+  - Entendi. E o que Ada Lovelace fez exatamente?
+  - "Ela escreveu o que hoje \xE9 considerado o primeiro algoritmo destinado a ser
+    processado por uma m\xE1quina."
+  - "Prevendo que poderiam fazer mais do que c\xE1lculos, at\xE9 mesmo criar m\xFAsica
+    ou arte."
+  - "Isso \xE9 incr\xEDvel! Ela estava muito \xE0 frente de seu tempo."
+  - "Sim, definitivamente! Ada Lovelace foi uma vision\xE1ria que viu o potencial
+    da computa\xE7\xE3o "
+  - antes mesmo de os computadores modernos existirem.
+  - "\xC9 fascinante como uma pessoa pode ter um impacto t\xE3o grande na hist\xF3ria,
+    mesmo h\xE1 tanto tempo."
+  - "Com certeza! Ada Lovelace deixou um legado inspirador para gera\xE7\xF5es de
+    cientistas e programadores."
+  - "Obrigado por compartilhar isso comigo, Grace. A hist\xF3ria de Ada Lovelace
+    \xE9 realmente inspiradora."
+  - "De nada, Ame! Sempre \xE9 bom aprender sobre figuras hist\xF3ricas que mudaram
+    o mundo."
   actorNameText:
-  - Ana
-  - Ana
+  - Grace
   - Ame
-  - Ana
+  - Grace
   - Ame
+  - Grace
+  - Grace
+  - Ame
+  - Grace
+  - Grace
+  - Ame
+  - Grace
+  - Grace
+  - Ame
+  - Grace
+  - Ame
+  - Grace
 --- !u!61 &1459094485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8054,7 +8105,7 @@ GameObject:
   - component: {fileID: 2068202209}
   - component: {fileID: 2068202208}
   m_Layer: 0
-  m_Name: Ana
+  m_Name: Grace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
