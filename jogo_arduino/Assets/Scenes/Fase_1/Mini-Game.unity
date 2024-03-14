@@ -3029,6 +3029,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c40f1f6eacd4c4e5e8583ad508f5c8c7, type: 2}
   - {fileID: 11400000, guid: 4c7b772eb5fc54a3395e7a15df8f0838, type: 2}
   tutorial_version: 0
+  numberPhase: Fase1
   questionText: {fileID: 55469487}
   answerButtons:
   - {fileID: 719648132}

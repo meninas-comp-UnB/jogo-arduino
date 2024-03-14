@@ -10,6 +10,7 @@ public class QuestionSetup : MonoBehaviour
     [SerializeField] private List<QuestionData> questions;
     private QuestionData currentQuestion;
     public bool tutorial_version;
+    public string numberPhase;
 
     [SerializeField] private TextMeshProUGUI questionText;
     [SerializeField] private AnswerButton[] answerButtons;
@@ -53,7 +54,7 @@ public class QuestionSetup : MonoBehaviour
 
     private void GetQuestionAssets()
     {
-        questions = new List<QuestionData>(Resources.LoadAll<QuestionData>("Fase1"));
+        questions = new List<QuestionData>(Resources.LoadAll<QuestionData>(numberPhase));
     }
 
     private void SetNextQuestion()
