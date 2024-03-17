@@ -73,6 +73,9 @@ public class DialogueTutorial : MonoBehaviour
         profile.sprite = rostos[index];
         actorNameText.text = nomes[index];
         slide.sprite = aula[index]; 
+
+        yield return new WaitForSeconds(0.5f);
+
         foreach (char letter in sentences[index].ToCharArray()){
             speechText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -81,7 +84,7 @@ public class DialogueTutorial : MonoBehaviour
     }
 
     public void NextSentence(){
-        if(speechText.text == sentences[index]){
+
             //ainda tem textos
             if(index < sentences.Length -1){
 
@@ -93,7 +96,7 @@ public class DialogueTutorial : MonoBehaviour
                 index = 0;
                 tutorialPanel.SetActive(false);
             }
-        }
+        
     }
 
 
@@ -110,9 +113,9 @@ public class DialogueTutorial : MonoBehaviour
    }
 
     public void ExitDialogueMode(){
-        dialogueIsPlaying = false;
-        tutorialPanel.SetActive(false);
-       // dialogueText.text = "";
+    speechText.text = ""; 
+    index = 0; 
+    tutorialPanel.SetActive(false); 
     }
 
 }

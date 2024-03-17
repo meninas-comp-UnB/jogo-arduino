@@ -135,16 +135,22 @@ public class QuestionSetup : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("Mini-Game");
+        if(numberPhase == "Fase1"){
+            SceneManager.LoadScene("Mini-Game1");
+        }else if(numberPhase == "Fase2"){
+            SceneManager.LoadScene("Mini-Game2");
+        }
+       
     }
 
     public void GoBack()
     {
-        SceneManager.LoadScene("Fase-1");
+        if(numberPhase == "Fase1"){
+             SceneManager.LoadScene("Fase-1");
+        }else if(numberPhase == "Fase2"){
+            SceneManager.LoadScene("Fase-2");
+        }
+       
     }
 
-    public bool HasAnswered
-    {
-    get { return hasAnswered; }
-    }
 }

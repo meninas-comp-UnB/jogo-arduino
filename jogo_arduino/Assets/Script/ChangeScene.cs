@@ -15,6 +15,11 @@ public void ChangeToScene(string sceneName)
         ChangeToScene("Fase-1");
     }
 
+    public void ChangeToPhase_2()
+    {
+        ChangeToScene("Fase-2");
+    }
+
     public void ChangeToPhase2()
     {
         if(PlayerPrefs.GetInt("Phase2", 0) == 1){
@@ -25,6 +30,12 @@ public void ChangeToScene(string sceneName)
     public void ChangeToPhasesMenu()
     {
         ChangeToScene("Tela-Fases");
+    }
+    public void ChangeToQuiz1(){
+        ChangeToScene("Mini-Game1");
+    }
+    public void ChangeToQuiz2(){
+        ChangeToScene("Mini-Game2");
     }
 
 }

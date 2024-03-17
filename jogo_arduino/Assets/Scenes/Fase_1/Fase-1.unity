@@ -857,7 +857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197068390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.42, y: 1.058, z: 0}
+  m_LocalPosition: {x: 6.56, y: 1.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1415,9 +1415,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162170338}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ChangeScene
+      - m_Target: {fileID: 1162170340}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeToQuiz1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2822,7 +2822,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0048984885, y: 0.044085786}
+  m_Offset: {x: 0.0048984885, y: -0.028457642}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2833,7 +2833,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.38279808, y: 0.3287352}
+  m_Size: {x: 0.54239357, y: 0.5608742}
   m_EdgeRadius: 0
 --- !u!1 &689328917
 GameObject:
@@ -3893,7 +3893,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000029802322, y: 0.040478647}
+  m_Offset: {x: 0.0290173, y: 0.02234286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3904,7 +3904,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3964998, y: 0.46296942}
+  m_Size: {x: 0.6286389, y: 0.644328}
   m_EdgeRadius: 0
 --- !u!1 &998376199
 GameObject:
@@ -4271,8 +4271,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.4, y: 0.5}
+  m_Offset: {x: -0.006651163, y: 0.0066512227}
+  m_Size: {x: 0.5108535, y: 0.51528764}
   m_Direction: 0
 --- !u!50 &1056939363
 Rigidbody2D:
@@ -5300,8 +5300,7 @@ MonoBehaviour:
   - "Que m\xE1ximo! Ent\xE3o hoje aprenderemos sobre Arduino?"
   - Isso mesmo, vi em nosso plano de ensino e vi que iremos aprender bastante nesse
     curso!
-  - "Obrigada, irei prestar bastante aten\xE7\xE3o nas aula, n\xE3o quero perder
-    nada!"
+  - "Obrigada, irei prestar bastante aten\xE7\xE3o na aula, n\xE3o quero perder nada!"
   actorNameText:
   - Ana
   - Ana
@@ -5321,7 +5320,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0146974325, y: 0}
+  m_Offset: {x: 0.011070132, y: -0.010881498}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5332,7 +5331,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.38271022, y: 0.5736315}
+  m_Size: {x: 0.5350511, y: 0.65342927}
   m_EdgeRadius: 0
 --- !u!1 &1472062556
 GameObject:
@@ -5852,8 +5851,6 @@ MonoBehaviour:
   practiceImage: {fileID: 392513107}
   speechText: {fileID: 641769757}
   actorNameText: {fileID: 1768110003}
-  newImageTheoric: {fileID: 21300000, guid: 1c978d81728b240deb078a60de90f45e, type: 3}
-  newImagePractice: {fileID: 21300000, guid: 088be24a93f93424db7fdef1b72dd04a, type: 3}
   typingSpeed: 0.0001
 --- !u!114 &1618418890
 MonoBehaviour:
@@ -6721,7 +6718,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813127581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -7420,7 +7417,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.034595966, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7431,7 +7428,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.75}
+  m_Size: {x: 1.0691919, y: 0.75}
   m_EdgeRadius: 0
 --- !u!1 &1896054965
 GameObject:

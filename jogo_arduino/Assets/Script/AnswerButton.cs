@@ -40,7 +40,7 @@ public class AnswerButton : MonoBehaviour
 
 public void OnClick()
 {
-    if (!questionSetup.HasAnswered && !hasBeenClicked)
+    if ( !hasBeenClicked)
     {
         hasBeenClicked = true;
         if (isCorrect)

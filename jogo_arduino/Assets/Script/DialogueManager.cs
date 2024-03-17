@@ -1,51 +1,33 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("Components")]
     public GameObject dialoguePanel;
     public Image profile;
     public Image slide;
-    public Image theoricImage; // Image da UI a ser alterada
+    public Image theoricImage;
     public Image practiceImage;
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI actorNameText;
-    private int index;
-    public Sprite newImageTheoric;
-    public Sprite newImagePractice;
 
-    [Header("Settings")] 
     public float typingSpeed;
     private string[] sentences;
-    private Sprite[] aula;
-    private Sprite[] rostos;
-    private string[] nomes;
+    private Sprite[] characters;
+    private Sprite[] slides;
+    private string[] actorNames;
+    private bool changeImage = false;
 
-    private bool changeImage = false; // Flag para indicar se a imagem deve ser alterada
-    
+    private int index;
+
     private static DialogueManager instance;
 
     private void Awake() 
     {
-        if (instance != null)
-        {
-            Debug.LogWarning("Found more than one Dialogue Manager in the scene");
-        }
         instance = this;
-        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1){
-            theoricImage.sprite = newImageTheoric;
-        }
-        if(PlayerPrefs.GetInt("PracticeImage", 0) == 1){
-            practiceImage.sprite = newImagePractice;
-
-        }
-        
-
+        dialoguePanel.SetActive(false);
     }
 
     public static DialogueManager GetInstance() 
@@ -53,58 +35,73 @@ public class DialogueManager : MonoBehaviour
         return instance;
     }
 
-    private void Start(){
-        dialoguePanel.SetActive(false);
-    }
-
-    public void Speech(Sprite[] p, string[] txt, string[] actorName, Sprite[] Slide, bool changeImage = false)
+    public void Speech(Sprite[] characters, string[] sentences, string[] actorNames, Sprite[] slides, bool changeImage = false)
     {
+        this.characters = characters;
+        this.sentences = sentences;
+        this.actorNames = actorNames;
+        this.slides = slides;
+        this.changeImage = changeImage;
+
         dialoguePanel.SetActive(true);
-        rostos = p;
-        sentences = txt;
-        nomes = actorName;
-        aula = Slide; 
-        this.changeImage = changeImage; // Define a flag para alterar a imagem
+        index = 0;
         StartCoroutine(TypeSentence());
     }
 
-    IEnumerator TypeSentence(){
-        profile.sprite = rostos[index];
-        actorNameText.text = nomes[index];
-        slide.sprite = aula[index]; 
-        foreach (char letter in sentences[index].ToCharArray()){
+    IEnumerator TypeSentence()
+    {
+        profile.sprite = characters[index];
+        actorNameText.text = actorNames[index];
+        slide.sprite = slides[index];
+        speechText.text = "";
+
+        foreach (char letter in sentences[index].ToCharArray())
+        {
             speechText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
     }
 
-    public void NextSentence(){
-        if(speechText.text == sentences[index]){
-            if(index < sentences.Length -1){
+    public void NextSentence()
+    {
+        if (speechText.text == sentences[index])
+        {
+            if (index < sentences.Length - 1)
+            {
                 index++;
-                speechText.text = "";
                 StartCoroutine(TypeSentence());
-            }else{
-                if(changeImage){
-                    // Define a preferência de imagem alterada como 1
-                    PlayerPrefs.SetInt("ImageChanged", 1);
-                    PlayerPrefs.Save();
-                    theoricImage.sprite = newImageTheoric; 
-                }
-                speechText.text = "";
-                index = 0;
-                dialoguePanel.SetActive(false);
+            }
+            else
+            {
+                EndDialogue();
             }
         }
     }
 
-    public void StopDialogue(){
+    private void EndDialogue()
+    {
+        speechText.text = "";
+        index = 0;
+        dialoguePanel.SetActive(false);
+        
+        if (changeImage)
+        {
+            PlayerPrefs.SetInt("ImageChanged", 1);
+            PlayerPrefs.Save();
+            theoricImage.sprite = theoricImage.sprite; 
+        }
+    }
+
+    public void StopDialogue()
+    {
         speechText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
     }
 
     public void ExitDialogueMode(){
-        dialoguePanel.SetActive(false);
+    speechText.text = ""; 
+    index = 0; 
+    dialoguePanel.SetActive(false); 
     }
 }
