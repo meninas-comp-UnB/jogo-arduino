@@ -19,6 +19,8 @@ public class DialogueManager2 : MonoBehaviour
     private Sprite[] slides;
     private string[] actorNames;
     private bool changeImage = false;
+    public Sprite newImageTheoric;
+    public Sprite newImagePractice;
 
     private int index;
 
@@ -26,8 +28,20 @@ public class DialogueManager2 : MonoBehaviour
 
     private void Awake() 
     {
+        if (instance != null)
+        {
+            Debug.LogWarning("Found more than one Dialogue Manager in the scene");
+        }
         instance = this;
-        dialoguePanel.SetActive(false);
+        if(PlayerPrefs.GetInt("ImageChanged2", 0) == 1){
+            theoricImage.sprite = newImageTheoric;
+        }
+        if(PlayerPrefs.GetInt("ImageChanged2", 0) == 1 && PlayerPrefs.GetInt("PracticeImage2", 0) == 1){
+            practiceImage.sprite = newImagePractice;
+
+        }
+        
+
     }
 
     public static DialogueManager2 GetInstance() 
@@ -88,7 +102,7 @@ public class DialogueManager2 : MonoBehaviour
         {
             PlayerPrefs.SetInt("ImageChanged2", 1);
             PlayerPrefs.Save();
-            theoricImage.sprite = theoricImage.sprite; 
+            theoricImage.sprite = newImageTheoric; 
         }
     }
 

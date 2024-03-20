@@ -117,9 +117,12 @@ public class QuestionSetup : MonoBehaviour
         {
             resultText.text = $"Parabéns pela conquista! Você acertou {correctAnswersCount} de 5 perguntas!";
             finalImage.sprite = spriteForPass;
-            PlayerPrefs.SetInt("PracticeImage", 1);
-            PlayerPrefs.SetInt("PracticeImage2", 1);
-            PlayerPrefs.SetInt("Phase2", 1);
+            if(numberPhase == "Fase-1"){
+                PlayerPrefs.SetInt("PracticeImage", 1);
+                PlayerPrefs.SetInt("Phase2", 1);
+            }else if(numberPhase == "Fase-2"){
+                PlayerPrefs.SetInt("PracticeImage2", 1);
+            }
             PlayerPrefs.Save();
         }
         else
@@ -135,9 +138,9 @@ public class QuestionSetup : MonoBehaviour
 
     public void PlayAgain()
     {
-        if(numberPhase == "Fase1"){
+        if(numberPhase == "Fase-1"){
             SceneManager.LoadScene("Mini-Game1");
-        }else if(numberPhase == "Fase2"){
+        }else if(numberPhase == "Fase-2"){
             SceneManager.LoadScene("Mini-Game2");
         }
        
