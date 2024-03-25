@@ -117,10 +117,10 @@ public class QuestionSetup : MonoBehaviour
         {
             resultText.text = $"Parabéns pela conquista! Você acertou {correctAnswersCount} de 5 perguntas!";
             finalImage.sprite = spriteForPass;
-            if(numberPhase == "Fase-1"){
+            if(numberPhase == "Fase1"){
                 PlayerPrefs.SetInt("PracticeImage", 1);
                 PlayerPrefs.SetInt("Phase2", 1);
-            }else if(numberPhase == "Fase-2"){
+            }else if(numberPhase == "Fase2"){
                 PlayerPrefs.SetInt("PracticeImage2", 1);
             }
             PlayerPrefs.Save();
