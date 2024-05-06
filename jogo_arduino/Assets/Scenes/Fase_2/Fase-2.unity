@@ -5647,7 +5647,7 @@ MonoBehaviour:
   visualCue: {fileID: 317275667}
   tutorialVersion: 0
   phase: 2
-  changeImage: 1
+  changeImage: 0
   profile:
   - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
   - {fileID: 21300000, guid: 66a2db53087484f3eb5ccbd20100dc6e, type: 3}
@@ -6287,9 +6287,9 @@ MonoBehaviour:
   practiceImage: {fileID: 392513107}
   speechText: {fileID: 641769757}
   actorNameText: {fileID: 1768110003}
+  typingSpeed: 0.0001
   newImageTheoric: {fileID: 21300000, guid: 1c978d81728b240deb078a60de90f45e, type: 3}
   newImagePractice: {fileID: 21300000, guid: 088be24a93f93424db7fdef1b72dd04a, type: 3}
-  typingSpeed: 0.0001
 --- !u!1 &1629419768
 GameObject:
   m_ObjectHideFlags: 0

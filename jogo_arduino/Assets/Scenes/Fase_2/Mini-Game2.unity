@@ -342,9 +342,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1673582927}
-        m_TargetAssemblyTypeName: QuestionSetup, Assembly-CSharp
-        m_MethodName: PlayAgain
+      - m_Target: {fileID: 1673582929}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeToQuiz2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
