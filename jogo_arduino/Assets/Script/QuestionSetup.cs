@@ -138,9 +138,9 @@ public class QuestionSetup : MonoBehaviour
 
     public void PlayAgain()
     {
-        if(numberPhase == "Fase-1"){
+        if(numberPhase == "Fase1"){
             SceneManager.LoadScene("Mini-Game1");
-        }else if(numberPhase == "Fase-2"){
+        }else if(numberPhase == "Fase2"){
             SceneManager.LoadScene("Mini-Game2");
         }
        
