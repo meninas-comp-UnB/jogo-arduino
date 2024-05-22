@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class QuestionSetup : MonoBehaviour
 {
     [SerializeField] private List<QuestionData> questions;
+    private List<QuestionData> originalQuestions;
     private QuestionData currentQuestion;
     public bool tutorial_version;
     public string numberPhase;
@@ -54,7 +55,8 @@ public class QuestionSetup : MonoBehaviour
 
     private void GetQuestionAssets()
     {
-        questions = new List<QuestionData>(Resources.LoadAll<QuestionData>(numberPhase));
+        originalQuestions = new List<QuestionData>(Resources.LoadAll<QuestionData>(numberPhase));
+        questions = new List<QuestionData>(originalQuestions);
     }
 
     private void SetNextQuestion()
@@ -70,6 +72,11 @@ public class QuestionSetup : MonoBehaviour
 
     private void SelectNewQuestion()
     {
+        if (questions.Count == 0)
+        {
+            questions = new List<QuestionData>(originalQuestions);
+        }
+
         int randomQuestionIndex = Random.Range(0, questions.Count);
         currentQuestion = questions[randomQuestionIndex];
         questions.RemoveAt(randomQuestionIndex);
@@ -84,7 +91,14 @@ public class QuestionSetup : MonoBehaviour
     {
         for (int i = 0; i < answerButtons.Length; i++)
         {
-            answerButtons[i].Initialize(currentQuestion.answers[i], currentQuestion.images[i], i == currentQuestion.correctAnswer);
+            if (i < currentQuestion.answers.Length)
+            {
+                answerButtons[i].Initialize(currentQuestion.answers[i], currentQuestion.images[i], i == currentQuestion.correctAnswer);
+            }
+            else
+            {
+                answerButtons[i].gameObject.SetActive(false);
+            }
         }
     }
 
@@ -103,8 +117,6 @@ public class QuestionSetup : MonoBehaviour
 
     public void RegisterAnswer(bool isCorrect)
     {
-        // Adicione lógica para processar a resposta, se necessário
-        // Exemplo: Atualizar pontuação, mostrar painel de resultado, etc.
         if (isCorrect)
         {
             correctAnswersCount++;
@@ -117,10 +129,13 @@ public class QuestionSetup : MonoBehaviour
         {
             resultText.text = $"Parabéns pela conquista! Você acertou {correctAnswersCount} de 5 perguntas!";
             finalImage.sprite = spriteForPass;
-            if(numberPhase == "Fase1"){
+            if (numberPhase == "Fase1")
+            {
                 PlayerPrefs.SetInt("PracticeImage", 1);
                 PlayerPrefs.SetInt("Phase2", 1);
-            }else if(numberPhase == "Fase2"){
+            }
+            else if (numberPhase == "Fase2")
+            {
                 PlayerPrefs.SetInt("PracticeImage2", 1);
             }
             PlayerPrefs.Save();
@@ -130,7 +145,7 @@ public class QuestionSetup : MonoBehaviour
             resultText.text = $"Você acertou {correctAnswersCount} de 5 perguntas. Melhore na próxima vez!";
             finalImage.sprite = spriteForFail;
         }
-
+    
         resultPanel.SetActive(true);
         playAgainButton.gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
@@ -138,22 +153,24 @@ public class QuestionSetup : MonoBehaviour
 
     public void PlayAgain()
     {
-        if(numberPhase == "Fase1"){
-            SceneManager.LoadScene("Mini-Game1");
-        }else if(numberPhase == "Fase2"){
-            SceneManager.LoadScene("Mini-Game2");
-        }
-       
+        resultPanel.SetActive(false);
+        index = 1; 
+        correctAnswersCount = 0;
+        hasAnswered = false; 
+        questions = new List<QuestionData>(originalQuestions); 
+        SetNextQuestion();
+
     }
 
     public void GoBack()
     {
-        if(numberPhase == "Fase1"){
-             SceneManager.LoadScene("Fase-1");
-        }else if(numberPhase == "Fase2"){
+        if (numberPhase == "Fase1")
+        {
+            SceneManager.LoadScene("Fase-1");
+        }
+        else if (numberPhase == "Fase2")
+        {
             SceneManager.LoadScene("Fase-2");
         }
-       
     }
-
 }

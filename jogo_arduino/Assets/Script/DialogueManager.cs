@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour
         if(PlayerPrefs.GetInt("ImageChanged", 0) == 1){
             theoricImage.sprite = newImageTheoric;
         }
-        if(PlayerPrefs.GetInt("PracticeImage", 0) == 1){
+        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1 && PlayerPrefs.GetInt("PracticeImage", 0) == 1){
             practiceImage.sprite = newImagePractice;
 
         }
