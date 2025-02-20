@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
+  m_Name: Q7
+  m_EditorClassIdentifier: 
+  question: "Qual desses \xE9 um hardware externo? "
+  correctAnswer: 1
+  answers:
+  - Coolers
+  - Teclado
+  - HD
+  images:
+  - {fileID: 21300000, guid: fd4d0cdb54c154efebc68cb4ae831f56, type: 3}
+  - {fileID: 21300000, guid: 9b4a29f0e10b74a68b7ab143b37c2798, type: 3}
+  - {fileID: 21300000, guid: 6d96fd8baa6914dd8a507dbde518cd59, type: 3}

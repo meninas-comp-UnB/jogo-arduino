@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     public string cena;
+    public string secondScena;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,11 @@ public class Menu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(cena);
+    }
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene(secondScena);
     }
     public void QuitGame()
     {

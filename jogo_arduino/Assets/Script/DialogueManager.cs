@@ -1,47 +1,46 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("Components")]
-   // [SerializeField] private GameObject dialoguePanel;
-
     public GameObject dialoguePanel;
     public Image profile;
     public Image slide;
+    public Image theoricImage;
+    public Image practiceImage;
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI actorNameText;
-    private int index;
 
-    [Header("Settings")] 
     public float typingSpeed;
     private string[] sentences;
-    private Sprite[] aula;
-    private Sprite[] rostos;
-    private string[] nomes;
+    private Sprite[] characters;
+    private Sprite[] slides;
+    private string[] actorNames;
+    private bool changeImage = false;
+    public Sprite newImageTheoric;
+    public Sprite newImagePractice;
 
-
-   // [SerializeField] private TextMeshProUGUI dialogueText;
-
-   // private Story currentStory;
-
-    private bool dialogueIsPlaying;
+    private int index;
 
     private static DialogueManager instance;
 
-
-    private void Awake() 
+      private void Awake() 
     {
         if (instance != null)
         {
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
+        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1){
+            theoricImage.sprite = newImageTheoric;
+        }
+        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1 && PlayerPrefs.GetInt("PracticeImage", 0) == 1){
+            practiceImage.sprite = newImagePractice;
 
+        }
+        
 
     }
 
@@ -50,72 +49,73 @@ public class DialogueManager : MonoBehaviour
         return instance;
     }
 
-    private void Start(){
-        dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
+    public void Speech(Sprite[] characters, string[] sentences, string[] actorNames, Sprite[] slides, bool changeImage = false)
+    {
+        this.characters = characters;
+        this.sentences = sentences;
+        this.actorNames = actorNames;
+        this.slides = slides;
+        this.changeImage = changeImage;
 
-
-
+        dialoguePanel.SetActive(true);
+        index = 0;
+        StartCoroutine(TypeSentence());
     }
 
-    public void Speech( Sprite[] p, string[] txt, string[] actorName, Sprite[] Slide)
-{
-        dialogueIsPlaying = true;
-        dialoguePanel.SetActive(true);
-        rostos = p;
-        sentences = txt;
-        nomes = actorName;
-        aula = Slide; 
-      //  profile.sprite = rostos[0];
-        //actorNameText.text = nomes[0];
-        //slide.sprite = aula[0]; 
-        StartCoroutine(TypeSentece());
-}
+    IEnumerator TypeSentence()
+    {
+        profile.sprite = characters[index];
+        actorNameText.text = actorNames[index];
+        slide.sprite = slides[index];
+        speechText.text = "";
 
-    IEnumerator TypeSentece(){
-        profile.sprite = rostos[index];
-        actorNameText.text = nomes[index];
-        slide.sprite = aula[index]; 
-        foreach (char letter in sentences[index].ToCharArray()){
+        foreach (char letter in sentences[index].ToCharArray())
+        {
             speechText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-   
     }
 
-    public void NextSentence(){
-        if(speechText.text == sentences[index]){
-            //ainda tem textos
-            if(index < sentences.Length -1){
-
+    public void NextSentence()
+    {
+        if (speechText.text == sentences[index])
+        {
+            if (index < sentences.Length - 1)
+            {
                 index++;
-                speechText.text = "";
-                StartCoroutine(TypeSentece());
-            }else{// quando acabar
-                speechText.text = "";
-                index = 0;
-                dialoguePanel.SetActive(false);
+                StartCoroutine(TypeSentence());
+            }
+            else
+            {
+                EndDialogue();
             }
         }
     }
 
-
-    private void Update(){
-        if(!dialogueIsPlaying){
-            return;
-        }
-
-    }
-    public void StopDialogue(){
+    private void EndDialogue()
+    {
         speechText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-   }
-
-    public void ExitDialogueMode(){
-        dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
-       // dialogueText.text = "";
+        
+        if (changeImage)
+        {
+            PlayerPrefs.SetInt("ImageChanged", 1);
+            PlayerPrefs.Save();
+            theoricImage.sprite = newImageTheoric; 
+        }
     }
 
+    public void StopDialogue()
+    {
+        speechText.text = "";
+        index = 0;
+        dialoguePanel.SetActive(false);
+    }
+
+    public void ExitDialogueMode(){
+    speechText.text = ""; 
+    index = 0; 
+    dialoguePanel.SetActive(false); 
+    }
 }

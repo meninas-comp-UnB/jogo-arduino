@@ -2,120 +2,175 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuestionSetup : MonoBehaviour
 {
-    [SerializeField]
-    private List<QuestionData> questions;
+    [SerializeField] private List<QuestionData> questions;
+    private List<QuestionData> originalQuestions;
     private QuestionData currentQuestion;
+    public bool tutorial_version;
+    public string numberPhase;
 
-    [SerializeField]
-    private TextMeshProUGUI questionText;
-    
-    [SerializeField]
-    private AnswerButton[] answerButtons;
+    [SerializeField] private TextMeshProUGUI questionText;
+    [SerializeField] private AnswerButton[] answerButtons;
+    [SerializeField] private TextMeshProUGUI pointsText;
+    [SerializeField] private GameObject resultPanel;
+    [SerializeField] private TextMeshProUGUI resultText;
+    [SerializeField] private Image resultImage;
+    [SerializeField] private Button playAgainButton;
+    [SerializeField] private Button backButton;
 
-    [SerializeField]
-    private TextMeshProUGUI pointsTela;
-    
-    private int index;
+    [SerializeField] private Sprite spriteForPass; // Atribua no Unity
+    [SerializeField] private Sprite spriteForFail; // Atribua no Unity
+    [SerializeField] private Image finalImage;
+
+    private int index = 1;
+    private bool hasAnswered = false;
+    private int correctAnswersCount = 0;
 
     private void Awake()
     {
-        // Get all the questions ready
         GetQuestionAssets();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        index = 1;
-        //Get a new question
-        SelectNewQuestion();
-        // Set all text and values on screen
-        SetQuestionValues();
-        // Set all of the answer buttons text and correct answer values
-        SetAnswerValues();
-        SetPoint(index);
-        index++;
-        
+        SetNextQuestion();
     }
 
-
-    public void NextSentence(){
-        if(index < 6){
-             SelectNewQuestion();
-            // Set all text and values on screen
-            SetQuestionValues();
-            // Set all of the answer buttons text and correct answer values
-            SetAnswerValues();
-            SetPoint(index);
-            index++;
-        }
-        
-    }
-    // Update is called once per frame
-    void Update()
+    public void NextSentence()
     {
-        
+        if (!hasAnswered && index <= 5)
+        {
+            hasAnswered = true;
+            SetNextQuestion();
+        }
+        else if (index > 5)
+        {
+            ShowResultPanel();
+        }
     }
 
     private void GetQuestionAssets()
     {
-        // Get all of the questions from the questions folder
-        questions = new List<QuestionData>(Resources.LoadAll<QuestionData>("Fase1"));
+        originalQuestions = new List<QuestionData>(Resources.LoadAll<QuestionData>(numberPhase));
+        questions = new List<QuestionData>(originalQuestions);
+    }
+
+    private void SetNextQuestion()
+    {
+        SelectNewQuestion();
+        SetQuestionValues();
+        SetAnswerValues();
+        SetPoint(index);
+        index++;
+        ResetButtonsInteractivity();
+        hasAnswered = false;
     }
 
     private void SelectNewQuestion()
     {
-        // Get a random value for which question to choose
+        if (questions.Count == 0)
+        {
+            questions = new List<QuestionData>(originalQuestions);
+        }
+
         int randomQuestionIndex = Random.Range(0, questions.Count);
-        //Set the question to the randon index
         currentQuestion = questions[randomQuestionIndex];
-        //Set the image to help to interpretate the question
-        
-        // Remove this questionm from the list so it will not be repeared (until the game is restarted)
         questions.RemoveAt(randomQuestionIndex);
     }
 
     private void SetQuestionValues()
     {
-        // Set the question text
         questionText.text = currentQuestion.question;
     }
 
     private void SetAnswerValues()
     {
-        // Randomize the answer button order
-       // List<string> answers = RandomizeAnswers(new List<string>(currentQuestion.answers));
-       int contadorCorrect = 0;
-
-        // Set up the answer buttons
         for (int i = 0; i < answerButtons.Length; i++)
         {
-            // Create a temporary boolean to pass to the buttons
-            bool isCorrect = false;
-
-            // If it is the correct answer, set the bool to true
-            if(i == currentQuestion.correctAnswer)
+            if (i < currentQuestion.answers.Length)
             {
-                isCorrect = true;
-                contadorCorrect++;
-                
+                answerButtons[i].Initialize(currentQuestion.answers[i], currentQuestion.images[i], i == currentQuestion.correctAnswer);
             }
-
-            answerButtons[i].SetIsCorrect(isCorrect);
-            answerButtons[i].SetAnswerText(currentQuestion.answers[i]);
-            answerButtons[i].SetAnswerImage(currentQuestion.images[i]);
-            
+            else
+            {
+                answerButtons[i].gameObject.SetActive(false);
+            }
         }
     }
 
-    
+    private void SetPoint(int number)
+    {
+        pointsText.text = $"{number}/5";
+    }
 
-    public void SetPoint(int number){
-        Debug.Log(number);
-        string text = number + "/5";
-        pointsTela.text = text;
+    private void ResetButtonsInteractivity()
+    {
+        foreach (var button in answerButtons)
+        {
+            button.ResetButtonAppearance();
+        }
+    }
+
+    public void RegisterAnswer(bool isCorrect)
+    {
+        if (isCorrect)
+        {
+            correctAnswersCount++;
+        }
+    }
+
+    private void ShowResultPanel()
+    {
+        if (correctAnswersCount >= 3)
+        {
+            resultText.text = $"Parabéns pela conquista! Você acertou {correctAnswersCount} de 5 perguntas!";
+            finalImage.sprite = spriteForPass;
+            if (numberPhase == "Fase1")
+            {
+                PlayerPrefs.SetInt("PracticeImage", 1);
+                PlayerPrefs.SetInt("Phase2", 1);
+            }
+            else if (numberPhase == "Fase2")
+            {
+                PlayerPrefs.SetInt("PracticeImage2", 1);
+            }
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            resultText.text = $"Você acertou {correctAnswersCount} de 5 perguntas. Melhore na próxima vez!";
+            finalImage.sprite = spriteForFail;
+        }
+    
+        resultPanel.SetActive(true);
+        playAgainButton.gameObject.SetActive(true);
+        backButton.gameObject.SetActive(true);
+    }
+
+    public void PlayAgain()
+    {
+        resultPanel.SetActive(false);
+        index = 1; 
+        correctAnswersCount = 0;
+        hasAnswered = false; 
+        questions = new List<QuestionData>(originalQuestions); 
+        SetNextQuestion();
+
+    }
+
+    public void GoBack()
+    {
+        if (numberPhase == "Fase1")
+        {
+            SceneManager.LoadScene("Fase-1");
+        }
+        else if (numberPhase == "Fase2")
+        {
+            SceneManager.LoadScene("Fase-2");
+        }
     }
 }

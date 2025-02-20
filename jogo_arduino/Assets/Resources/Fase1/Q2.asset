@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
   m_Name: Q2
   m_EditorClassIdentifier: 
-  question: "Quais s\xE3o as portas analogicas?"
+  question: "Onde est\xE3o localizadas as portas anal\xF3gicas?"
   correctAnswer: 1
   answers:
   - Imagem 1
   - Imagem 2
   - Imagem 3
   images:
-  - {fileID: 21300000, guid: 205ae8fcfb613374a8e8991d8451c3f7, type: 3}
-  - {fileID: 21300000, guid: 52eeafc0f755b4305ba2cf15f26e2805, type: 3}
-  - {fileID: 21300000, guid: 33771ddf0ee8b4ddbb6e1a8effc50746, type: 3}
+  - {fileID: 21300000, guid: dbec9948367804dd1a53c1f300fe4c89, type: 3}
+  - {fileID: 21300000, guid: 6f1c1dacfd9cc4cb382e1356d0a88dc1, type: 3}
+  - {fileID: 21300000, guid: 4063293106ec0406690f443ae8ed0bbd, type: 3}

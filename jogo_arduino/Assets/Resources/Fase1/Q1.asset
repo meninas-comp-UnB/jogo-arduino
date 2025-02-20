@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
   m_Name: Q1
   m_EditorClassIdentifier: 
-  question: "O que \xE9 um hardware?"
+  question: Qual dessas imagens representa um hardware?
   correctAnswer: 0
   answers:
   - Arduino
   - "C\xF3digo"
-  - Navegador
+  - Site
   images:
-  - {fileID: 21300000, guid: 8547af2f0b60448458545e320a2cd412, type: 3}
-  - {fileID: 21300000, guid: 7898355e0be5c4d64b404b823def915d, type: 3}
-  - {fileID: 21300000, guid: e278538a5ac060d45992cf5242bad350, type: 3}
+  - {fileID: 21300000, guid: 27bea7a133e2f44e0bc6f65ff9f7a782, type: 3}
+  - {fileID: 21300000, guid: 7d13c1e609b864499a19520f4a55ec3d, type: 3}
+  - {fileID: 21300000, guid: a0ab2a56146c24a058b6a03a2a1d5890, type: 3}
