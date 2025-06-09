@@ -55,6 +55,8 @@ public class DialogueTrigger : MonoBehaviour
                 }else if(phase == 2){
                     DialogueManager2.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);  
 
+                } else if(phase == 3){
+                     DialogueManager3.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);  
                 }
                 
                 
