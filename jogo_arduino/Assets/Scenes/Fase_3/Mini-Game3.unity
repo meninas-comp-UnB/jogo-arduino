@@ -344,7 +344,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1673582929}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeToQuiz2
+        m_MethodName: ChangeToQuiz3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1750,7 +1750,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1673582929}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeToPhase_2
+        m_MethodName: ChangeToPhase_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3030,7 +3030,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c40f1f6eacd4c4e5e8583ad508f5c8c7, type: 2}
   - {fileID: 11400000, guid: 4c7b772eb5fc54a3395e7a15df8f0838, type: 2}
   tutorial_version: 0
-  numberPhase: Fase2
+  numberPhase: Fase3
   questionText: {fileID: 55469487}
   answerButtons:
   - {fileID: 719648132}
@@ -3058,7 +3058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cena: Menu
-  secondScena: Fase-2
+  secondScena: Fase-3
 --- !u!114 &1673582929
 MonoBehaviour:
   m_ObjectHideFlags: 0

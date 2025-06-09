@@ -131,13 +131,19 @@ public class QuestionSetup : MonoBehaviour
             finalImage.sprite = spriteForPass;
             if (numberPhase == "Fase1")
             {
-                PlayerPrefs.SetInt("PracticeImage", 1);
-                PlayerPrefs.SetInt("Phase2", 1);
+                PlayerPrefs.SetInt("PracticeImage", 1); //Tela de conquista
+                PlayerPrefs.SetInt("Phase2", 1); //Tela fases (libera fase 2)
             }
             else if (numberPhase == "Fase2")
             {
-                PlayerPrefs.SetInt("PracticeImage2", 1);
+                PlayerPrefs.SetInt("PracticeImage2", 1); //Tela de conquista
+                PlayerPrefs.SetInt("Phase3", 1); //Tela fases (libera fase 3)
+            } 
+            else if (numberPhase == "Fase3")
+            {
+                PlayerPrefs.SetInt("PracticeImage3", 1); //Tela de conquista
             }
+
             PlayerPrefs.Save();
         }
         else
@@ -171,6 +177,9 @@ public class QuestionSetup : MonoBehaviour
         else if (numberPhase == "Fase2")
         {
             SceneManager.LoadScene("Fase-2");
+        }
+        else if (numberPhase == "Fase3"){
+            SceneManager.LoadScene("Fase-3");
         }
     }
 }

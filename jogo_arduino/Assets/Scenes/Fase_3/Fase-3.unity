@@ -1552,7 +1552,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1162170340}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeToQuiz2
+        m_MethodName: ChangeToQuiz3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

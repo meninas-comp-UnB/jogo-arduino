@@ -20,10 +20,24 @@ public void ChangeToScene(string sceneName)
         ChangeToScene("Fase-2");
     }
 
+    public void ChangeToPhase_3()
+    {
+        ChangeToScene("Fase-3");
+    }
+
+
     public void ChangeToPhase2()
     {
         if(PlayerPrefs.GetInt("Phase2", 0) == 1){
             ChangeToScene("Fase-2");
+        }
+        
+    }
+
+    public void ChangeToPhase3()
+    {
+        if(PlayerPrefs.GetInt("Phase3", 0) == 1){
+            ChangeToScene("Fase-3");
         }
         
     }
@@ -36,6 +50,10 @@ public void ChangeToScene(string sceneName)
     }
     public void ChangeToQuiz2(){
         ChangeToScene("Mini-Game2");
+    }
+
+    public void ChangeToQuiz3(){
+        ChangeToScene("Mini-Game3");
     }
 
 }

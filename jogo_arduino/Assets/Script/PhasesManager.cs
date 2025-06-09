@@ -10,10 +10,14 @@ public class PhasesManager : MonoBehaviour
     [Header("Components")]
     public Image phase1to2; // Image da UI a ser alterada
     public Image phase2to3;
+    public Image phase3to4;
     public Image phase2;
+    public Image phase3;
     public Sprite cabo1;
     public Sprite cabo2;
+    public Sprite cabo3;
     public Sprite newPhase2;
+    public Sprite newPhase3;
     public Button Botao;
     
     private void Awake() 
@@ -26,6 +30,10 @@ public class PhasesManager : MonoBehaviour
         }
         if(PlayerPrefs.GetInt("Phase3", 0) == 1){
             phase2to3.sprite = cabo2;
+            phase3.sprite = newPhase3;
+        }
+        if(PlayerPrefs.GetInt("Phase4", 0) == 1) {
+            phase3to4.sprite = cabo3;
         }
         
 
