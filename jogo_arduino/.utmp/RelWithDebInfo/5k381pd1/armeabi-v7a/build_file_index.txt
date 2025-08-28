@@ -1,0 +1,2 @@
+C:\Users\bianc\OneDrive\Documentos\PIBITI\jogo-arduino\jogo_arduino\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\bianc\OneDrive\Documentos\PIBITI\jogo-arduino\jogo_arduino\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
