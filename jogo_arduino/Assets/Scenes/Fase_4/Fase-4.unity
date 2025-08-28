@@ -2720,8 +2720,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1618418892}
-        m_TargetAssemblyTypeName: DialogueManager3, Assembly-CSharp
+      - m_Target: {fileID: 1618418891}
+        m_TargetAssemblyTypeName: DialogueManager4, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -2830,7 +2830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 587354813}
   tutorialVersion: 0
-  phase: 3
+  phase: 4
   changeImage: 1
   profile:
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
@@ -3320,7 +3320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fase 3
+  m_text: Fase 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4123,7 +4123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 286473828}
   tutorialVersion: 0
-  phase: 3
+  phase: 4
   changeImage: 0
   profile:
   - {fileID: 21300000, guid: aabe46796e45d4770aa76c4159a83c00, type: 3}
@@ -5491,8 +5491,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1618418892}
-        m_TargetAssemblyTypeName: DialogueManager3, Assembly-CSharp
+      - m_Target: {fileID: 1618418891}
+        m_TargetAssemblyTypeName: DialogueManager4, Assembly-CSharp
         m_MethodName: StopDialogue
         m_Mode: 1
         m_Arguments:
@@ -5799,7 +5799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 317275667}
   tutorialVersion: 0
-  phase: 3
+  phase: 4
   changeImage: 0
   profile:
   - {fileID: 21300000, guid: f80950c7dfeb64970958b0f83b21a212, type: 3}
@@ -6398,7 +6398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1618418888}
   - component: {fileID: 1618418890}
-  - component: {fileID: 1618418892}
+  - component: {fileID: 1618418891}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -6439,7 +6439,7 @@ MonoBehaviour:
   speechText: {fileID: 1209567138}
   actorNameText: {fileID: 632192906}
   typingSpeed: 0.0001
---- !u!114 &1618418892
+--- !u!114 &1618418891
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6448,7 +6448,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618418887}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c07ccc0eca10c7a46866ecfb1ed53541, type: 3}
+  m_Script: {fileID: 11500000, guid: 875b714f1049014468b081415a4a7baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 316335444}
@@ -6457,7 +6457,7 @@ MonoBehaviour:
   theoricImage: {fileID: 1391136640}
   practiceImage: {fileID: 392513107}
   speechText: {fileID: 641769757}
-  actorNameText: {fileID: 1768110003}
+  actorNameText: {fileID: 641769757}
   typingSpeed: 0.0001
   newImageTheoric: {fileID: 21300000, guid: 1c978d81728b240deb078a60de90f45e, type: 3}
   newImagePractice: {fileID: 21300000, guid: 088be24a93f93424db7fdef1b72dd04a, type: 3}

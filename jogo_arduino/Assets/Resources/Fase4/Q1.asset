@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1fca1620e014c2c9acda68b695dd96, type: 3}
+  m_Name: Q1
+  m_EditorClassIdentifier: 
+  question: Qual dessas imagens representa um software?
+  correctAnswer: 1
+  answers:
+  - Arduino
+  - "C\xF3digo"
+  - Monitor
+  images:
+  - {fileID: 21300000, guid: 17b712092cff00d4c9d88d2a9e421503, type: 3}
+  - {fileID: 21300000, guid: d6b2e1288afb1f64696d1f4014124d30, type: 3}
+  - {fileID: 21300000, guid: 2232fdbb226e64e4fab30f79c5b9d8b8, type: 3}

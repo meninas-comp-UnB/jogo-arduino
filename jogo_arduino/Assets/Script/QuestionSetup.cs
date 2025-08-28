@@ -138,10 +138,21 @@ public class QuestionSetup : MonoBehaviour
             {
                 PlayerPrefs.SetInt("PracticeImage2", 1); //Tela de conquista
                 PlayerPrefs.SetInt("Phase3", 1); //Tela fases (libera fase 3)
-            } 
+            }
             else if (numberPhase == "Fase3")
             {
                 PlayerPrefs.SetInt("PracticeImage3", 1); //Tela de conquista
+                PlayerPrefs.SetInt("Phase4", 1); //Tela fases (libera fase 4)
+            }
+            else if (numberPhase == "Fase4")
+            {
+                PlayerPrefs.SetInt("PracticeImage4", 1); //Tela de conquista
+                PlayerPrefs.SetInt("Phase5", 1); //Tela fases (libera fase 4)
+            }
+            else if (numberPhase == "Fase5")
+            {
+                PlayerPrefs.SetInt("PracticeImage5", 1); //Tela de conquista
+                PlayerPrefs.SetInt("Phase6", 1); //Tela fases (libera fase 4)
             }
 
             PlayerPrefs.Save();
@@ -178,8 +189,16 @@ public class QuestionSetup : MonoBehaviour
         {
             SceneManager.LoadScene("Fase-2");
         }
-        else if (numberPhase == "Fase3"){
+        else if (numberPhase == "Fase3")
+        {
             SceneManager.LoadScene("Fase-3");
+        }
+        else if (numberPhase == "Fase4")
+        {
+            SceneManager.LoadScene("Fase-4");
+        }
+        else if (numberPhase == "Fase5"){
+            SceneManager.LoadScene("Fase-5");
         }
     }
 }
