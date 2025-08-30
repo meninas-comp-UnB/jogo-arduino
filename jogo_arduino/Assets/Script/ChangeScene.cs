@@ -58,8 +58,7 @@ public class ChangeScene : MonoBehaviour
 
     public void ChangeToPhase2()
     {
-        //if (PlayerPrefs.GetInt("Phase2", 0) == 1)
-        if (PlayerPrefs.GetInt("Phase2", 1) == 1)
+        if (PlayerPrefs.GetInt("Phase2", 0) == 1)
         {
             ChangeToScene("Fase-2");
         }
@@ -68,8 +67,7 @@ public class ChangeScene : MonoBehaviour
 
     public void ChangeToPhase3()
     {
-        // if (PlayerPrefs.GetInt("Phase3", 0) == 1)
-        if (PlayerPrefs.GetInt("Phase3", 1) == 1)
+        if (PlayerPrefs.GetInt("Phase3", 0) == 1)
         {
             ChangeToScene("Fase-3");
         }

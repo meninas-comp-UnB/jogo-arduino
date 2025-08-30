@@ -46,20 +46,18 @@ public class PhasesManager : MonoBehaviour
     private void Awake()
     {
         Botao.interactable = false;
-        //if (PlayerPrefs.GetInt("Phase2", 0) == 1)
-        if (PlayerPrefs.GetInt("Phase2", 1) == 1)
+        if (PlayerPrefs.GetInt("Phase2", 0) == 1)
         {
             Botao.interactable = true;
             phase1to2.sprite = cabo1;
             phase2.sprite = newPhase2;
         }
-        // if (PlayerPrefs.GetInt("Phase3", 0) == 1)
-        if (PlayerPrefs.GetInt("Phase3", 1) == 1)
+        if (PlayerPrefs.GetInt("Phase3", 0) == 1)
         {
             phase2to3.sprite = cabo2;
             phase3.sprite = newPhase3;
         }
-        if (PlayerPrefs.GetInt("Phase4", 1) == 1)
+        if (PlayerPrefs.GetInt("Phase4", 0) == 1)
         {
             phase3to4.sprite = cabo3;
             phase4.sprite = newPhase4;
@@ -72,11 +70,6 @@ public class PhasesManager : MonoBehaviour
         if (PlayerPrefs.GetInt("Phase6", 0) == 1)
         {
             phase5to6.sprite = cabo5;
-            phase6.sprite = newPhase6;
-        }
-        if (PlayerPrefs.GetInt("Phase6", 0) == 1)
-        {
-            phase5to6.sprite = cabo6;
             phase6.sprite = newPhase6;
         }
         if (PlayerPrefs.GetInt("Phase7", 0) == 1)

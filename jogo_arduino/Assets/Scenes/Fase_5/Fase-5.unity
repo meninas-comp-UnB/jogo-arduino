@@ -1581,7 +1581,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1162170340}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeToQuiz3
+        m_MethodName: ChangeToQuiz5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2720,9 +2720,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1618418887}
-        m_TargetAssemblyTypeName: DialogueManager3, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueManager5, Assembly-CSharp
+        m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5492,7 +5492,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueManager3, Assembly-CSharp
+        m_TargetAssemblyTypeName: DialogueManager5, Assembly-CSharp
         m_MethodName: StopDialogue
         m_Mode: 1
         m_Arguments:
@@ -6399,7 +6399,6 @@ GameObject:
   - component: {fileID: 1618418888}
   - component: {fileID: 1618418890}
   - component: {fileID: 1618418891}
-  - component: {fileID: 1618418892}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -6449,7 +6448,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618418887}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875b714f1049014468b081415a4a7baf, type: 3}
+  m_Script: {fileID: 11500000, guid: c84cefe0abecd413b921c3769d3b335e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 316335444}
@@ -6458,32 +6457,11 @@ MonoBehaviour:
   theoricImage: {fileID: 1391136640}
   practiceImage: {fileID: 392513107}
   speechText: {fileID: 641769757}
-  actorNameText: {fileID: 641769757}
+  actorNameText: {fileID: 1768110003}
   typingSpeed: 0.0001
   newImageTheoric: {fileID: 21300000, guid: 1c978d81728b240deb078a60de90f45e, type: 3}
   newImagePractice: {fileID: 21300000, guid: 088be24a93f93424db7fdef1b72dd04a, type: 3}
---- !u!114 &1618418892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618418887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cac85e40afa52e43bca218bea949410, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 316335444}
-  profile: {fileID: 1456675363}
-  slide: {fileID: 1391136640}
-  theoricImage: {fileID: 392513107}
-  practiceImage: {fileID: 0}
-  speechText: {fileID: 641769757}
-  actorNameText: {fileID: 641769757}
-  typingSpeed: 0.0001
-  newImageTheoric: {fileID: 21300000, guid: 1c978d81728b240deb078a60de90f45e, type: 3}
-  newImagePractice: {fileID: 21300000, guid: 088be24a93f93424db7fdef1b72dd04a, type: 3}
+  numberPhase: 5
 --- !u!1 &1629419768
 GameObject:
   m_ObjectHideFlags: 0

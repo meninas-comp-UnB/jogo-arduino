@@ -16,8 +16,6 @@ public class DialogueTrigger : MonoBehaviour
     public Sprite[] slide;
     public string[] speechText;
     public string[] actorNameText;
-   // public Sprite newImage; // Nova sprite para ser exibida
-   
     private bool playerInRange;
     private bool dialogueIsPlaying; // Flag para indicar se o diálogo está em andamento
      
@@ -53,43 +51,7 @@ public class DialogueTrigger : MonoBehaviour
             else
             {
                 // Passa a nova sprite ao chamar o diálogo
-                if (phase == 1)
-                {
-                    DialogueManager.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
-                else if (phase == 2)
-                {
-                    DialogueManager2.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-
-                }
-                else if (phase == 3)
-                {
-                    DialogueManager3.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
-                else if (phase == 4)
-                {
-                    DialogueManager4.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
-                else if (phase == 5)
-                {
-                    DialogueManager5.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
-                else if (phase == 6)
-                {
-                    DialogueManager4.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
-                else if (phase == 7)
-                {
-                    DialogueManager4.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
-                else if (phase == 8)
-                {
-                    DialogueManager4.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
-                else if (phase == 9)
-                {
-                    DialogueManager4.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
-                }
+                DialogueManager.GetInstance().Speech(profile, speechText, actorNameText, slide, changeImage);
                 
             }
             dialogueIsPlaying = true; // Define a flag como true quando o diálogo é iniciado

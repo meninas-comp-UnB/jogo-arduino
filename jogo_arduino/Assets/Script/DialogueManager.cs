@@ -21,26 +21,29 @@ public class DialogueManager : MonoBehaviour
     private bool changeImage = false;
     public Sprite newImageTheoric;
     public Sprite newImagePractice;
+    public int numberPhase;
 
     private int index;
 
     private static DialogueManager instance;
 
-      private void Awake() 
+    private void Awake()
     {
         if (instance != null)
         {
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
-        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1){
+
+        if (PlayerPrefs.GetInt("ImageChanged" + numberPhase.ToString(), 0) == 1)
+        {
             theoricImage.sprite = newImageTheoric;
         }
-        if(PlayerPrefs.GetInt("ImageChanged", 0) == 1 && PlayerPrefs.GetInt("PracticeImage", 0) == 1){
+        if (PlayerPrefs.GetInt("ImageChanged" + numberPhase.ToString(), 0) == 1 && PlayerPrefs.GetInt("PracticeImage" + numberPhase.ToString(), 0) == 1)
+        {
             practiceImage.sprite = newImagePractice;
 
         }
-        
 
     }
 
@@ -100,7 +103,7 @@ public class DialogueManager : MonoBehaviour
         
         if (changeImage)
         {
-            PlayerPrefs.SetInt("ImageChanged", 1);
+            PlayerPrefs.SetInt("ImageChanged" + numberPhase.ToString(), 1);
             PlayerPrefs.Save();
             theoricImage.sprite = newImageTheoric; 
         }

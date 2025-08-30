@@ -131,29 +131,45 @@ public class QuestionSetup : MonoBehaviour
             finalImage.sprite = spriteForPass;
             if (numberPhase == "Fase1")
             {
-                PlayerPrefs.SetInt("PracticeImage", 1); //Tela de conquista
-                PlayerPrefs.SetInt("Phase2", 1); //Tela fases (libera fase 2)
+                PlayerPrefs.SetInt("PracticeImage", 1); 
+                PlayerPrefs.SetInt("Phase2", 1);
             }
             else if (numberPhase == "Fase2")
             {
-                PlayerPrefs.SetInt("PracticeImage2", 1); //Tela de conquista
-                PlayerPrefs.SetInt("Phase3", 1); //Tela fases (libera fase 3)
+                PlayerPrefs.SetInt("PracticeImage2", 1); 
+                PlayerPrefs.SetInt("Phase3", 1);
             }
             else if (numberPhase == "Fase3")
             {
-                PlayerPrefs.SetInt("PracticeImage3", 1); //Tela de conquista
-                PlayerPrefs.SetInt("Phase4", 1); //Tela fases (libera fase 4)
+                PlayerPrefs.SetInt("PracticeImage3", 1); 
+                PlayerPrefs.SetInt("Phase4", 1);
             }
             else if (numberPhase == "Fase4")
             {
-                PlayerPrefs.SetInt("PracticeImage4", 1); //Tela de conquista
-                PlayerPrefs.SetInt("Phase5", 1); //Tela fases (libera fase 4)
+                PlayerPrefs.SetInt("PracticeImage4", 1);
+                PlayerPrefs.SetInt("Phase5", 1); 
             }
             else if (numberPhase == "Fase5")
             {
-                PlayerPrefs.SetInt("PracticeImage5", 1); //Tela de conquista
-                PlayerPrefs.SetInt("Phase6", 1); //Tela fases (libera fase 4)
+                PlayerPrefs.SetInt("PracticeImage5", 1); 
+                PlayerPrefs.SetInt("Phase6", 1);
             }
+            else if (numberPhase == "Fase6")
+            {
+                PlayerPrefs.SetInt("PracticeImage6", 1);
+                PlayerPrefs.SetInt("Phase7", 1); 
+            }
+            else if (numberPhase == "Fase7")
+            {
+                PlayerPrefs.SetInt("PracticeImage7", 1); 
+                PlayerPrefs.SetInt("Phase8", 1);
+            }
+            else if (numberPhase == "Fase8")
+            {
+                PlayerPrefs.SetInt("PracticeImage8", 1); 
+                PlayerPrefs.SetInt("Phase9", 1);
+            }
+
 
             PlayerPrefs.Save();
         }
@@ -197,8 +213,24 @@ public class QuestionSetup : MonoBehaviour
         {
             SceneManager.LoadScene("Fase-4");
         }
-        else if (numberPhase == "Fase5"){
+        else if (numberPhase == "Fase5")
+        {
             SceneManager.LoadScene("Fase-5");
+        }
+        else if (numberPhase == "Fase6")
+        {
+            SceneManager.LoadScene("Fase-6");
+        }
+        else if (numberPhase == "Fase7")
+        {
+            SceneManager.LoadScene("Fase-7");
+        }
+        else if (numberPhase == "Fase8")
+        {
+            SceneManager.LoadScene("Fase-8");
+        }
+        else if (numberPhase == "Fase9"){
+            SceneManager.LoadScene("Fase-9");
         }
     }
 }

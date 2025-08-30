@@ -35,5 +35,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase_4/Mini-Game4.unity
     guid: 8ec5c0acee040ae47894740da8574bd2
+  - enabled: 1
+    path: Assets/Scenes/Fase_6/Mini-Game6.unity
+    guid: df887b8ab5e87fd41af901d881d5a3b6
+  - enabled: 1
+    path: Assets/Scenes/Fase_6/Fase-6.unity
+    guid: f6e7f283656463f41a111573c40d4a7b
+  - enabled: 1
+    path: Assets/Scenes/Fase_5/Fase-5.unity
+    guid: 9d3ebb7a0825a674fa2f6132a019faba
+  - enabled: 1
+    path: Assets/Scenes/Fase_5/Mini-Game5.unity
+    guid: edcbc462a868fec41a1d71c91795d462
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
